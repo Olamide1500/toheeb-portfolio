@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact · Toheeb</title>
+<meta name="description" content="Get in touch with Toheeb Sulaimon, product designer. Open to remote roles, internships and freelance projects.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact · Toheeb">
+<meta property="og:description" content="Get in touch with Toheeb Sulaimon, product designer. Open to remote roles, internships and freelance projects.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#F3F2EF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@1&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.nav a[aria-current] { font-weight: 700; }
+.ct { min-height: calc(100svh - 120px); display: grid; grid-template-rows: 1fr auto; }
+.ct__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 560px); gap: clamp(40px, 8vw, 120px); align-items: start; padding-block: clamp(48px, 8vw, 120px) clamp(48px, 6vw, 80px); }
+.ct__left { display: grid; gap: 22px; justify-items: start; min-width: 0; }
+.ct h1 { font-family: var(--f-display); font-weight: 700; font-size: clamp(2.75rem, 1.4rem + 4.4vw, 5rem); line-height: .98; letter-spacing: -.04em; }
+.ct h1 span { display: block; }
+.ct__lead { color: var(--ink-soft); font-size: clamp(17px, 1rem + .3vw, 20px); line-height: 1.5; max-width: 40ch; }
+.ct__email { display: grid; gap: 8px; margin-top: 18px; min-width: 0; max-width: 100%; }
+.ct__addr { font-family: var(--f-display); font-weight: 700; font-size: clamp(1.25rem, .8rem + 1.6vw, 2.125rem); letter-spacing: -.02em; overflow-wrap: anywhere; user-select: all; }
+.ct__btns { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn--copy { position: relative; overflow: hidden; min-width: 148px; }
+.btn--copy .c-a, .btn--copy .c-b { display: inline-flex; align-items: center; gap: 8px; transition: transform .45s var(--ease-out), opacity .3s; }
+.btn--copy .c-b { position: absolute; inset: 0; justify-content: center; transform: translateY(110%); opacity: 0; }
+.btn--copy.is-done { background: var(--green); }
+.btn--copy.is-done .c-a { transform: translateY(-110%); opacity: 0; }
+.btn--copy.is-done .c-b { transform: none; opacity: 1; }
+.ct__toast { font-size: 14px; color: var(--grey); min-height: 1.4em; }
+.ct__right { display: grid; gap: 28px; min-width: 0; }
+.ct__links { border-top: 1px solid rgba(26, 23, 20, .14); }
+.ct__links a { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 4px 16px; padding-block: 20px; border-bottom: 1px solid rgba(26, 23, 20, .14); text-decoration: none; }
+.ct__links strong { font-family: var(--f-display); font-weight: 700; font-size: clamp(20px, 1.1rem + .4vw, 24px); letter-spacing: -.01em; transition: transform .45s var(--ease-out); }
+.ct__links small { grid-column: 1; font-size: 15px; color: var(--grey); }
+.ct__links svg { grid-row: 1 / span 2; grid-column: 2; width: 18px; height: 18px; transition: transform .45s var(--ease-out); }
+.ct__links a:hover strong { transform: translateX(6px); }
+.ct__links a:hover svg { transform: translate(3px, -3px); }
+.ct__cv { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: 24px; border-radius: 20px; background: #EDEBE6; }
+.ct__cv strong { display: block; font-family: var(--f-display); font-weight: 700; font-size: 22px; }
+.ct__cv small { font-family: var(--f-mono); font-size: 13px; color: var(--grey); }
+.ct__foot { display: flex; gap: 8px 24px; flex-wrap: wrap; border-top: 1px solid rgba(26, 23, 20, .14); padding-block: 24px 40px; font-family: var(--f-mono); font-size: 14px; color: var(--grey); }
+/* entrance */
+.ct-in > * { animation: ctIn .9s var(--ease-out) both; }
+.ct-in > *:nth-child(2) { animation-delay: .06s; } .ct-in > *:nth-child(3) { animation-delay: .12s; } .ct-in > *:nth-child(4) { animation-delay: .18s; } .ct-in > *:nth-child(5) { animation-delay: .24s; }
+@keyframes ctIn { from { opacity: 0; transform: translateY(18px); } }
+@media (max-width: 899px) {
+  .ct__grid { grid-template-columns: 1fr; padding-top: 40px; }
+  .ct__btns { display: grid; width: 100%; }
+  .ct__btns .btn { width: 100%; }
+  .ct__cv { display: grid; }
+  .ct__cv .btn { width: 100%; }
+}
+</style>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="index.html">TOHEEB</a>
+    <nav class="nav" aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="https://docs.google.com/document/d/1FTQwIDMbJTH2n3hDwcGk9VsAi0eCIkIrzyoSCxBQKmU/view" target="_blank" rel="noopener">CV</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menuOpen" aria-label="Open menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+  </div>
+</header>
+
+<main class="wrap ct">
+  <div class="ct__grid">
+    <section class="ct__left ct-in">
+      <p class="status"><span class="status__dot"></span><span>Open to work&nbsp; · &nbsp;<span class="d-x">Product designer, </span>Lagos</span></p>
+      <h1><span>Let’s work</span> <span>together.</span></h1>
+      <p class="ct__lead">I’m open to remote product design roles, internships and freelance projects.</p>
+      <div class="ct__email">
+        <p class="label">Email</p>
+        <p class="ct__addr" id="addr">sulaimontoheeb400@gmail.com</p>
+      </div>
+      <div class="ct__btns">
+        <button type="button" class="btn btn--primary btn--copy" id="copy"><span class="c-a">Copy email</span><span class="c-b">Copied <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 6.5l2.3 2.3L9.5 3.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+        <a class="btn btn--secondary" href="mailto:sulaimontoheeb400@gmail.com">Send an email <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <p class="ct__toast" id="toast" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="ct__right ct-in" aria-label="Elsewhere">
+      <p class="label">Elsewhere</p>
+      <nav class="ct__links">
+        <a href="https://www.linkedin.com/in/sulaimon-toheeb" target="_blank" rel="noopener"><strong>LinkedIn</strong><small>Experience and updates</small><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="https://www.behance.net/Sulaimon_Toheeb" target="_blank" rel="noopener"><strong>Behance</strong><small>Full case studies</small><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="https://x.com/Toheeb_design" target="_blank" rel="noopener"><strong>X</strong><small>Design thoughts and posts</small><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </nav>
+      <div class="ct__cv">
+        <div><strong>My CV</strong><small>PDF · from Google Docs</small></div>
+        <a class="btn btn--primary" href="https://docs.google.com/document/d/1FTQwIDMbJTH2n3hDwcGk9VsAi0eCIkIrzyoSCxBQKmU/export?format=pdf" target="_blank" rel="noopener">Download CV <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M6 2.5v7M3 6.5l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </section>
+  </div>
+  <footer class="ct__foot"><span>Lagos, Nigeria</span><span>Open to remote work</span></footer>
+</main>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <div class="menu__top"><a class="logo" href="index.html">TOHEEB</a><button class="menu__close" id="menuClose">Close ✕</button></div>
+  <nav class="menu__links">
+    <a href="work.html"><small>01</small>Work</a>
+    <a href="about.html"><small>02</small>About</a>
+    <a href="https://docs.google.com/document/d/1FTQwIDMbJTH2n3hDwcGk9VsAi0eCIkIrzyoSCxBQKmU/export?format=pdf" target="_blank" rel="noopener"><small>03</small>Download CV</a>
+    <a href="contact.html"><small>04</small>Contact</a>
+  </nav>
+  <div class="menu__foot">
+    <p class="cta__eyebrow"><i></i>OPEN TO WORK · REMOTE · LAGOS</p>
+    <a class="menu__email" href="mailto:sulaimontoheeb400@gmail.com">sulaimontoheeb400@gmail.com <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </div>
+</div>
+
+<style>@media (max-width:767px){.d-x{display:none}}</style>
+<script src="js/site.js"></script>
+<script>
+(function () {
+  var b = document.getElementById('copy'), t = document.getElementById('toast'), a = document.getElementById('addr'), tm;
+  function done(msg) { b.classList.add('is-done'); t.textContent = msg; clearTimeout(tm); tm = setTimeout(function () { b.classList.remove('is-done'); t.textContent = ''; }, 2400); }
+  function fallback() {
+    var r = document.createRange(); r.selectNodeContents(a); var s = getSelection(); s.removeAllRanges(); s.addRange(r);
+    t.textContent = 'Email selected. Press Ctrl+C or Cmd+C to copy.';
+  }
+  b.addEventListener('click', function () {
+    var v = a.textContent.trim();
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(v).then(function () { done('Email copied to your clipboard.'); }, fallback);
+    else fallback();
+  });
+})();
+</script>
+<script src="js/cursor.js"></script>
+</body>
+</html>

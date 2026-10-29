@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>All work · Toheeb</title>
+<meta name="description" content="7 case studies and 4 website explorations by Toheeb Sulaimon, product designer.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="All work · Toheeb">
+<meta property="og:description" content="7 case studies and 4 website explorations by Toheeb Sulaimon, product designer.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#F3F2EF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@1&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/case.css">
+<link rel="stylesheet" href="css/work.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="index.html">TOHEEB</a>
+    <nav class="nav" aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="https://docs.google.com/document/d/1FTQwIDMbJTH2n3hDwcGk9VsAi0eCIkIrzyoSCxBQKmU/view" target="_blank" rel="noopener">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menuOpen" aria-label="Open menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+  </div>
+</header>
+
+<main>
+  <section class="wrap wk-head">
+    <a class="back" href="index.html"><span class="arrow">←</span> Home</a>
+    <h1 class="wk-title">All work</h1>
+    <p class="wk-lead">Mobile apps, web apps and websites — each with the problem it solves.</p>
+    <div class="wk-filters" role="group" aria-label="Filter projects" id="filters">
+      <span class="wk-filters__pill" aria-hidden="true"></span>
+      <button type="button" class="is-on" data-f="all" aria-pressed="true">All <small>7</small></button>
+      <button type="button" data-f="mobile" aria-pressed="false">Mobile <small>5</small></button>
+      <button type="button" data-f="web" aria-pressed="false">Web <small>3</small></button>
+      <button type="button" data-f="redesign" aria-pressed="false">Redesign <small>3</small></button>
+    </div>
+  </section>
+
+  <section class="wrap wk-list" aria-label="Case studies">
+    <!-- featured (desktop + tablet) -->
+    <article class="wk-feat" data-tags="web" data-reveal>
+      <a class="wk-feat__media" href="attendance.html" data-cursor="Open" aria-label="Open the Attendance system case study" style="--tint: var(--t-att)">
+        <img src="img/home-01.jpg" alt="Attendance system dashboard: check-in card and this week’s hours" loading="eager" decoding="async">
+      </a>
+      <div class="wk-feat__text">
+        <p class="wk-feat__meta"><span class="wk-badge">Featured</span><span>01 / 07</span></p>
+        <h2><a href="attendance.html">Attendance system</a></h2>
+        <p class="wk-tags"><span>Web app</span><span>Real problem</span></p>
+        <p class="wk-feat__desc">A one-click check-in tool, born from a real problem at my workspace.</p>
+        <div class="wk-feat__btns">
+          <a class="btn btn--primary" href="attendance.html">Open case study <span class="arrow">→</span></a>
+          <a class="text-link" href="attendance.html#quick">Quick read · 1 min</a>
+        </div>
+      </div>
+    </article>
+
+    <div class="wk-index" id="index">
+      <div class="wk-index__head" aria-hidden="true"><span>No.</span><span>Project</span><span>Type</span><span>Status</span><span></span></div>
+      <!-- rows are built by js/work.js from the list below -->
+    </div>
+    <p class="wk-empty" id="wkEmpty" hidden>No projects in this filter.</p>
+  </section>
+
+  <section class="wrap wk-ex" id="explorations" aria-labelledby="exTitle">
+    <div class="wk-ex__head" data-reveal>
+      <div>
+        <p class="label"><span class="d-only">Explorations&nbsp; · &nbsp;4 sites</span><span class="m-only">Also designed</span></p>
+        <h2 id="exTitle"><span class="d-only">Beyond the case studies.</span><span class="m-only">4 websites</span><span class="wk-ex__tap">Tap to view</span></h2>
+      </div>
+      <p>Websites that show my visual design: type, colour and layout. One is for a client and three are personal practice. No case studies here, just the work.</p>
+    </div>
+
+    <div class="wk-ex__grid">
+      <article class="ex-card ex-card--mega" data-reveal>
+        <button type="button" class="ex-card__media ex-card__media--linen" data-ex="mega" data-cursor="View" aria-label="View Mega’s Clothiers">
+          <img class="ex-phone" src="img/ex/mega-1.jpg" alt="Mega’s Clothiers mobile home: native wear, cut to your measure" loading="lazy" decoding="async">
+        </button>
+        <div class="ex-card__text">
+          <h3>Mega’s Clothiers <span class="wk-tags"><span class="d-only">Mobile website</span><span class="is-dark">Client</span></span></h3>
+          <p>A website for a menswear tailor in Ibadan and Kano, so clients at home and abroad can see his work and reach him.</p>
+          <button type="button" class="ex-card__go" data-ex="mega"><span class="t-tap">Click</span> to view <span class="arrow">→</span></button>
+        </div>
+      </article>
+      <article class="ex-card ex-card--nova" data-reveal>
+        <button type="button" class="ex-card__media" data-ex="nova" data-cursor="View" aria-label="View Nova Skin">
+          <img src="img/ex/nova-card.jpg" alt="Nova Skin home: skincare, reduced to what matters" loading="lazy" decoding="async">
+        </button>
+        <div class="ex-card__text">
+          <h3>Nova Skin <span class="wk-tags"><span class="d-only">Website</span><span>Skincare</span></span></h3>
+          <p>Practising a quiet, premium look with less colour and more space.</p>
+          <button type="button" class="ex-card__go" data-ex="nova"><span class="t-tap">Click</span> to view <span class="arrow">→</span></button>
+        </div>
+      </article>
+      <article class="ex-card ex-card--top" data-reveal>
+        <button type="button" class="ex-card__media" data-ex="topflight" data-cursor="View" aria-label="View Topflight">
+          <img src="img/ex/top-card.jpg" alt="Topflight agency home: building momentum, leaving a mark" loading="lazy" decoding="async">
+        </button>
+        <div class="ex-card__text">
+          <h3>Topflight <span class="wk-tags"><span class="d-only">Website</span><span>Agency</span></span></h3>
+          <p>Practising bold type and how to show many services in one simple diagram.</p>
+          <button type="button" class="ex-card__go" data-ex="topflight"><span class="t-tap">Click</span> to view <span class="arrow">→</span></button>
+        </div>
+      </article>
+      <article class="ex-card ex-card--lum" data-reveal>
+        <button type="button" class="ex-card__media ex-card__media--pair" data-ex="lumina" data-cursor="View" aria-label="View Lumina, two colour directions">
+          <img src="img/ex/lumA-card.jpg" alt="Lumina home, green direction" loading="lazy" decoding="async">
+          <img src="img/ex/lumB-card.jpg" alt="Lumina home, coral direction" loading="lazy" decoding="async">
+        </button>
+        <div class="ex-card__text">
+          <h3>Lumina <span class="wk-tags"><span class="d-only">Website</span><span class="d-only">Real estate</span><span class="d-only">2 colour directions</span><span class="m-only">A / B</span></span></h3>
+          <p>Practising a dark theme that still feels warm. I tried two colour directions on the same layout.</p>
+          <button type="button" class="ex-card__go" data-ex="lumina"><span class="t-tap">Click</span> to view <span class="arrow">→</span></button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="wrap foot" id="contact">
+    <section class="cta on-dark" data-reveal>
+      <div class="cta__left">
+        <p class="cta__eyebrow"><i></i>OPEN TO WORK · REMOTE</p>
+        <h2>Like what you see?</h2>
+        <p>Open to remote product design roles and freelance projects.</p>
+        <div class="cta__btns">
+          <a class="btn btn--primary" href="mailto:sulaimontoheeb400@gmail.com">Email me</a>
+          <a class="btn btn--secondary" href="https://docs.google.com/document/d/1FTQwIDMbJTH2n3hDwcGk9VsAi0eCIkIrzyoSCxBQKmU/export?format=pdf" target="_blank" rel="noopener">Download CV <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M6 2.5v7M3 6.5l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+      <div class="cta__right">
+        <p class="cta__eyebrow" style="letter-spacing:.1em">GET IN TOUCH</p>
+        <a class="cta__email" href="mailto:sulaimontoheeb400@gmail.com">sulaimontoheeb400@gmail.com</a>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/sulaimon-toheeb" target="_blank" rel="noopener">LinkedIn <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="https://www.behance.net/Sulaimon_Toheeb" target="_blank" rel="noopener">Behance <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="https://x.com/Toheeb_design" target="_blank" rel="noopener">X <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+    </section>
+    <div class="foot__bottom"><span>© 2026 Toheeb</span><span>Lagos, Nigeria · Open to remote work</span></div>
+  </footer>
+</main>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <div class="menu__top"><a class="logo" href="index.html">TOHEEB</a><button class="menu__close" id="menuClose">Close ✕</button></div>
+  <nav class="menu__links">
+    <a href="work.html"><small>01</small>Work</a>
+    <a href="about.html"><small>02</small>About</a>
+    <a href="https://docs.google.com/document/d/1FTQwIDMbJTH2n3hDwcGk9VsAi0eCIkIrzyoSCxBQKmU/export?format=pdf" target="_blank" rel="noopener"><small>03</small>Download CV</a>
+    <a href="contact.html"><small>04</small>Contact</a>
+  </nav>
+  <div class="menu__foot">
+    <p class="cta__eyebrow"><i></i>OPEN TO WORK · REMOTE · LAGOS</p>
+    <a class="menu__email" href="mailto:sulaimontoheeb400@gmail.com">sulaimontoheeb400@gmail.com <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <div class="menu__social">
+      <a href="https://www.linkedin.com/in/sulaimon-toheeb" target="_blank" rel="noopener">LinkedIn <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="https://www.behance.net/Sulaimon_Toheeb" target="_blank" rel="noopener">Behance <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="https://x.com/Toheeb_design" target="_blank" rel="noopener">X <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<script src="js/site.js"></script>
+<script src="js/work.js"></script>
+<script src="js/explore.js"></script>
+<script src="js/cursor.js"></script>
+</body>
+</html>

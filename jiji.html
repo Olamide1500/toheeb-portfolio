@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jiji search · Toheeb</title>
+<meta name="description" content="Case study: an unsolicited redesign of Jiji search, from search to product page.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jiji search · Toheeb">
+<meta property="og:description" content="Case study: an unsolicited redesign of Jiji search, from search to product page.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#F3F2EF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@1&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&family=Poppins:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/viewer.css">
+<link rel="stylesheet" href="css/case.css">
+<style>:root { --proj: var(--p-jiji); --tint: var(--t-jiji); }</style>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="index.html">TOHEEB</a>
+    <nav class="nav" aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="https://docs.google.com/document/d/1FTQwIDMbJTH2n3hDwcGk9VsAi0eCIkIrzyoSCxBQKmU/view" target="_blank" rel="noopener">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menuOpen" aria-label="Open menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+  </div>
+</header>
+
+<main>
+  <section class="wrap cs-hero">
+    <a class="back" href="work.html"><span class="arrow">←</span> All work</a>
+    <div class="cs-top">
+      <div class="cs-intro">
+        <div class="mode" role="group" aria-label="Reading mode"><button type="button" data-mode="quick" aria-pressed="false">Quick read</button><button type="button" data-mode="full" aria-pressed="true">Full story</button></div>
+        <p class="label">07 / 07 · Mobile + web · Marketplace · Unsolicited concept</p>
+        <h1 class="cs-title">Jiji search</h1>
+        <p class="cs-sub">Show more, process less.</p>
+        <p class="cs-lead">An unsolicited redesign of Jiji’s search flow, from search to product page. It keeps the information buyers need and changes the order they see it in.</p>
+        <p class="for"><span class="label">For</span><span>Buyers searching a crowded Nigerian marketplace</span></p>
+      </div>
+      <aside class="short">
+        <p class="label">The short version</p>
+        <dl>
+          <div><dt>Problem</dt><dd>Marketplaces give price, ratings, seller details, badges and promotions the same visual weight, so nothing tells a buyer where to look first.</dd></div>
+          <div><dt>What I did</dt><dd>Compared Jiji, Jumia and Konga, then redesigned the search flow in five screens for desktop web and mobile, with a style guide and a prototype.</dd></div>
+          <div><dt>Outcome</dt><dd>A 5-screen flow on desktop and mobile with Top Picks, a Filter drawer and Compare. An untested concept; testing is next.</dd></div>
+        </dl>
+      </aside>
+    </div>
+    <div class="hero-tile"><figure class="tile tile--d is-long"><div class="tile__win"><div class="tile__scroll" tabindex="0" aria-label="Results with Top Picks, scroll inside"><img src="img/ji/d-results.jpg" alt="Jiji search redesign: Results with Top Picks" loading="lazy"></div></div><figcaption>Results with Top Picks · <span>scroll inside</span></figcaption></figure></div>
+    <div class="facts"><div><span class="label">Role</span><span>Product designer</span></div><div><span class="label">Team</span><span>Solo</span></div><div><span class="label">Type</span><span>Unsolicited concept</span></div><div><span class="label">Platform</span><span>Desktop web + mobile</span></div><div><span class="label">Tools</span><span>Figma</span></div></div>
+  </section>
+
+  <div class="wrap cs-body">
+    <nav class="chapters" aria-label="On this page"><span class="label">On this page</span><a href="#problem">The problem</a><a href="#research">Research</a><a href="#decisions">Key decisions</a><a href="#a11y">Accessibility</a><a href="#visual">Visual design</a><a href="#process" data-only="full">Process</a><a href="#screens" data-only="full">Final screens</a><a href="#key-screens" data-only="quick">Final screens</a><a href="#learned" data-only="full">What I learned</a></nav>
+    <div class="sections">
+      <section class="sec" id="problem">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">01 · The problem</p><h2>Everything competes for attention at once.</h2></div><div class="sec__text" data-only="full"><p>Information overload isn’t one marketplace’s problem. It’s the pattern across the industry. All three give price, ratings, seller details, badges and promotions the same visual weight. I used Jiji as the example because most Nigerian buyers already know it, but the same thinking applies to any of them.</p></div></div><div class="callout" data-reveal><p class="label">How might we</p><p>Show buyers more without making them process more?</p></div>
+      </section>
+      <section class="sec" id="research">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">02 · Research</p><h2>Same search, three marketplaces.</h2></div><div class="sec__text" data-only="full"><p>I searched “headphone” on Jiji, Jumia and Konga to see how each one moves a buyer from search to decision.</p></div></div><div class="cards cards--3" data-reveal><div class="card stat"><b>14,776</b><p>results on Jiji, with categories shown twice and badges on every card</p><span class="label">Searched Oct 2026</span></div><div class="card stat"><b>11,899</b><p>results on Jumia, with filters shown twice and seven signals per card</p><span class="label">Searched Oct 2026</span></div><div class="card stat"><b>2,040</b><p>results on Konga, with the first row all sponsored</p><span class="label">Searched Oct 2026</span></div></div><div class="cards cards--3" data-reveal data-only="full"><div class="insight"><span class="label">Insight 01</span><h3>Keep the information</h3><p>I didn’t want to give buyers fewer options.</p></div><div class="insight"><span class="label">Insight 02</span><h3>Change the hierarchy</h3><p>Buyers should know which options are worth looking at first.</p></div><div class="insight"><span class="label">Insight 03</span><h3>The seller matters</h3><p>On Jiji, who is selling matters as much as what is being sold.</p></div></div><p class="note" data-only="full">Screenshots captured October 2026.</p>
+      </section>
+      <section class="sec decisions" id="decisions">
+        <div class="dec-track"><div class="dec-pin">
+          <div class="dec-head"><div class="sec__title"><p class="label">03 · Key decisions</p><h2>Three choices that change the order.</h2></div><div class="dec-steps" aria-hidden="true"><button type="button" class="dec-step is-active" data-step="0" tabindex="-1"><span class="dec-step__n">01</span><span class="dec-step__t">Change the hierarchy</span><i><b></b></i></button><button type="button" class="dec-step" data-step="1" tabindex="-1"><span class="dec-step__n">02</span><span class="dec-step__t">Keep the information</span><i><b></b></i></button><button type="button" class="dec-step" data-step="2" tabindex="-1"><span class="dec-step__n">03</span><span class="dec-step__t">Help buyers decide</span><i><b></b></i></button></div></div>
+          <div class="dec-stage">
+            <article class="decision is-active" data-i="0"><div class="figure"><img src="img/ji/dec-1.jpg" alt="Results page with four Top Picks above the list" loading="lazy"></div><div class="decision__text"><span class="decision__num">01</span><h3>Give buyers a starting point</h3><p>Top Picks sit above all results, labelled Best Overall, Best Value, Best Rated and Premium, so a long list starts with a reason to look. Each label is backed by the data.</p><span class="answers" data-only="full">Answers: change the hierarchy</span></div></article>
+            <article class="decision" data-i="1"><div class="figure"><img src="img/ji/dec-2.jpg" alt="Results page with the filter drawer open" loading="lazy"></div><div class="decision__text"><span class="decision__num">02</span><h3>Filters when you need them</h3><p>Filters open as a drawer instead of a permanent sidebar, so results get the full width. Price ranges show item counts before you apply them.</p><span class="answers" data-only="full">Answers: keep the information</span></div></article>
+            <article class="decision" data-i="2"><div class="figure"><img src="img/ji/dec-3.jpg" alt="Compare page with products side by side" loading="lazy"></div><div class="decision__text"><span class="decision__num">03</span><h3>Compare to decide, not just browse</h3><p>Up to 4 products side by side across 8 rows. Best Overall wins on balance, not on price alone, which shows buyers that value is more than price.</p><span class="answers" data-only="full">Answers: help buyers decide</span></div></article>
+          </div>
+        </div></div>
+      </section>
+      <section class="sec" id="a11y">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">04 · Accessibility decision</p><h2>Prices in a darker green, so they’re easy to read.</h2></div><div class="sec__text"><p>Jiji’s bright green is hard to read on white, especially on small text like prices. Prices are what people read most when they search, so I made them a darker green. The bright green stays on buttons and icons.</p></div></div><div class="compare-cards" data-reveal><div style="display:grid;gap:12px"><p class="label">Before · Jiji’s bright green</p><div class="pcard"><img src="img/ji/kora.jpg" alt="Kora G5 Wireless Headset" loading="lazy"><div><h4>Kora G5 Wireless Headset</h4><p class="price" style="color:#00B825">₦68,000<span class="old">₦85,000</span></p><p class="meta">★ 4.1 (63 reviews) · ✓ Verified seller</p><p class="verdict" style="color:#B4402C">✕ Hard to read on white</p></div></div></div><div style="display:grid;gap:12px"><p class="label">After · darker green</p><div class="pcard"><img src="img/ji/kora.jpg" alt="Kora G5 Wireless Headset" loading="lazy"><div><h4>Kora G5 Wireless Headset</h4><p class="price" style="color:#006C49">₦68,000<span class="old">₦85,000</span></p><p class="meta">★ 4.1 (63 reviews) · ✓ Verified seller</p><p class="verdict" style="color:#006C49">✓ Easy to read on white</p></div></div></div></div>
+      </section>
+      <section class="sec" id="visual">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">05 · Visual design</p><h2>One set of rules for every screen.</h2></div><div class="sec__text" data-only="full"><p>I cut the file down to one text colour, one brand green, one typeface and four corner radii, so every screen follows the same rules.</p></div></div><div class="swatches" data-reveal><div><i style="background:#00B825"></i>Brand green<span>#00B825</span></div><div><i style="background:#006C49"></i>Text green<span>#006C49</span></div><div><i style="background:#EDFFF1;box-shadow:inset 0 0 0 1px var(--line)"></i>Green tint<span>#EDFFF1</span></div><div><i style="background:#FF8A05"></i>Sell orange<span>#FF8A05</span></div><div><i style="background:#191C1D"></i>Text<span>#191C1D</span></div></div><div class="typecards" data-reveal><div class="card"><b style="font-family:Poppins,var(--f-sans)">Aa</b><span style="font-size:18px">Poppins</span><span style="font-size:15px;color:var(--ink-soft)">Every heading, label and price.</span></div><div class="card"><b style="font-family:Poppins,var(--f-sans)">4</b><span style="font-size:18px">4 corner sizes</span><span style="font-size:15px;color:var(--ink-soft)">4px cards · 8px buttons · 12px panels · full pills. Every card, button and panel uses one of these four.</span></div></div><p class="label">Components · from the style guide · slide for more →</p><div class="srow srow--comp" data-drag data-reveal><figure class="tile tile--c"><img src="img/ji/comp-1.jpg" alt="Top Pick cards: Best Overall, Best Value, Best Rated, Premium" loading="lazy"></figure><figure class="tile tile--c"><img src="img/ji/comp-2.jpg" alt="Result card" loading="lazy"></figure><figure class="tile tile--c"><img src="img/ji/comp-3.jpg" alt="Buttons: primary, secondary, confirm, compare disabled, tertiary" loading="lazy"></figure></div>
+      </section>
+      <section class="sec" id="process" data-only="full">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">06 · Process</p><h2>From three marketplaces to one clear flow.</h2></div></div><div class="cards cards--3" data-reveal data-only="full"><div class="card"><span class="label">Step 01</span><h3 style="font-size:18px">Compare competitors</h3><p style="font-size:15px;color:var(--ink-soft)">Searched “headphone” on Jiji, Jumia and Konga and noted what competed for attention.</p></div><div class="card"><span class="label">Step 02</span><h3 style="font-size:18px">Set the principle</h3><p style="font-size:15px;color:var(--ink-soft)">Keep the information, change the hierarchy.</p></div><div class="card"><span class="label">Step 03</span><h3 style="font-size:18px">Desktop, then mobile</h3><p style="font-size:15px;color:var(--ink-soft)">Five screens on desktop web, then the same flow at 402px to check the hierarchy still holds.</p></div></div><div class="srow srow--d" data-drag data-reveal><figure class="tile tile--d"><div class="tile__win"><img src="img/ji/before.jpg" alt="Jiji search results today" loading="lazy"></div><figcaption>Before · Jiji today</figcaption></figure><figure class="tile tile--d is-long"><div class="tile__win"><div class="tile__scroll" tabindex="0" aria-label="After · redesign, scroll inside"><img src="img/ji/d-results.jpg" alt="Jiji search redesign: After · redesign" loading="lazy"></div></div><figcaption>After · redesign · <span>scroll inside</span></figcaption></figure></div>
+      </section>
+      <section class="sec" id="screens" data-only="full">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">07 · Final screens</p><h2>Five screens, desktop and mobile.</h2></div><div class="sec__text"><p>All 17 screens at full size. Each row scrolls sideways, and long pages scroll inside their window.</p></div></div><div class="flow" data-reveal><div class="flow__head"><h3>Desktop · search to decision</h3><span class="label">9 screens · slide for more →</span></div><div class="srow srow--d" data-drag><figure class="tile tile--d is-long"><div class="tile__win"><div class="tile__scroll" tabindex="0" aria-label="Home, scroll inside"><img src="img/ji/d-home.jpg" alt="Jiji search redesign: Home" loading="lazy"></div></div><figcaption>Home · <span>scroll inside</span></figcaption></figure><figure class="tile tile--d is-long"><div class="tile__win"><div class="tile__scroll" tabindex="0" aria-label="Search history, scroll inside"><img src="img/ji/d-history.jpg" alt="Jiji search redesign: Search history" loading="lazy"></div></div><figcaption>Search history · <span>scroll inside</span></figcaption></figure><figure class="tile tile--d is-long"><div class="tile__win"><div class="tile__scroll" tabindex="0" aria-label="Results with Top Picks, scroll inside"><img src="img/ji/d-results.jpg" alt="Jiji search redesign: Results with Top Picks" loading="lazy"></div></div><figcaption>Results with Top Picks · <span>scroll inside</span></figcaption></figure><figure class="tile tile--d is-long"><div class="tile__win"><div class="tile__scroll" tabindex="0" aria-label="Filter drawer open, scroll inside"><img src="img/ji/d-filter.jpg" alt="Jiji search redesign: Filter drawer open" loading="lazy"></div></div><figcaption>Filter drawer open · <span>scroll inside</span></figcaption></figure><figure class="tile tile--d is-long"><div class="tile__win"><div class="tile__scroll" tabindex="0" aria-label="1 selected to compare, scroll inside"><img src="img/ji/d-sel1.jpg" alt="Jiji search redesign: 1 selected to compare" loading="lazy"></div></div><figcaption>1 selected to compare · <span>scroll inside</span></figcaption></figure><figure class="tile tile--d is-long"><div class="tile__win"><div class="tile__scroll" tabindex="0" aria-label="2 selected, scroll inside"><img src="img/ji/d-sel2.jpg" alt="Jiji search redesign: 2 selected" loading="lazy"></div></div><figcaption>2 selected · <span>scroll inside</span></figcaption></figure><figure class="tile tile--d is-long"><div class="tile__win"><div class="tile__scroll" tabindex="0" aria-label="3 selected, scroll inside"><img src="img/ji/d-sel3.jpg" alt="Jiji search redesign: 3 selected" loading="lazy"></div></div><figcaption>3 selected · <span>scroll inside</span></figcaption></figure><figure class="tile tile--d is-long"><div class="tile__win"><div class="tile__scroll" tabindex="0" aria-label="Compare, scroll inside"><img src="img/ji/d-compare.jpg" alt="Jiji search redesign: Compare" loading="lazy"></div></div><figcaption>Compare · <span>scroll inside</span></figcaption></figure><figure class="tile tile--d is-long"><div class="tile__win"><div class="tile__scroll" tabindex="0" aria-label="Product, scroll inside"><img src="img/ji/d-product.jpg" alt="Jiji search redesign: Product" loading="lazy"></div></div><figcaption>Product · <span>scroll inside</span></figcaption></figure></div></div><div class="flow" data-reveal><div class="flow__head"><h3>Mobile · same journey</h3><span class="label">8 screens · slide for more →</span></div><div class="srow srow--m" data-drag><figure class="tile tile--m"><img src="img/ji/m-home.jpg" alt="Jiji search redesign, mobile: Home" loading="lazy" width="1206" height="2622"><figcaption>Home</figcaption></figure><figure class="tile tile--m"><img src="img/ji/m-history.jpg" alt="Jiji search redesign, mobile: Search history" loading="lazy" width="1206" height="2622"><figcaption>Search history</figcaption></figure><figure class="tile tile--m is-long"><div class="tile__scroll" tabindex="0" aria-label="Results, scroll inside"><img src="img/ji/m-results.jpg" alt="Jiji search redesign, mobile: Results" loading="lazy" width="1206"></div><figcaption>Results · <span>scroll inside</span></figcaption></figure><figure class="tile tile--m"><img src="img/ji/m-sheet.jpg" alt="Jiji search redesign, mobile: Filter sheet" loading="lazy" width="1206" height="2340"><figcaption>Filter sheet</figcaption></figure><figure class="tile tile--m"><img src="img/ji/m-static.jpg" alt="Jiji search redesign, mobile: Filter (static)" loading="lazy" width="1206" height="2622"><figcaption>Filter (static)</figcaption></figure><figure class="tile tile--m is-long"><div class="tile__scroll" tabindex="0" aria-label="2 selected, scroll inside"><img src="img/ji/m-sel2.jpg" alt="Jiji search redesign, mobile: 2 selected" loading="lazy" width="1206"></div><figcaption>2 selected · <span>scroll inside</span></figcaption></figure><figure class="tile tile--m is-long"><div class="tile__scroll" tabindex="0" aria-label="Compare, scroll inside"><img src="img/ji/m-compare.jpg" alt="Jiji search redesign, mobile: Compare" loading="lazy" width="1206"></div><figcaption>Compare · <span>scroll inside</span></figcaption></figure><figure class="tile tile--m is-long"><div class="tile__scroll" tabindex="0" aria-label="Product, scroll inside"><img src="img/ji/m-product.jpg" alt="Jiji search redesign, mobile: Product" loading="lazy" width="1206"></div><figcaption>Product · <span>scroll inside</span></figcaption></figure></div></div>
+      </section>
+      <section class="sec" id="key-screens" data-only="quick">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">07 · Final screens</p><h2>Five screens, desktop and mobile.</h2></div><div class="sec__text"><p>The key screens at full size. The full story has all 17.</p></div></div><div class="flow" data-reveal><div class="flow__head"><h3>Desktop</h3><span class="label">2 screens · slide for more →</span></div><div class="srow srow--d" data-drag><figure class="tile tile--d is-long"><div class="tile__win"><div class="tile__scroll" tabindex="0" aria-label="Results with Top Picks, scroll inside"><img src="img/ji/d-results.jpg" alt="Jiji search redesign: Results with Top Picks" loading="lazy"></div></div><figcaption>Results with Top Picks · <span>scroll inside</span></figcaption></figure><figure class="tile tile--d is-long"><div class="tile__win"><div class="tile__scroll" tabindex="0" aria-label="Compare, scroll inside"><img src="img/ji/d-compare.jpg" alt="Jiji search redesign: Compare" loading="lazy"></div></div><figcaption>Compare · <span>scroll inside</span></figcaption></figure></div></div><div class="flow" data-reveal><div class="flow__head"><h3>Mobile</h3><span class="label">3 screens · slide for more →</span></div><div class="srow srow--m" data-drag><figure class="tile tile--m is-long"><div class="tile__scroll" tabindex="0" aria-label="Results, scroll inside"><img src="img/ji/m-results.jpg" alt="Jiji search redesign, mobile: Results" loading="lazy" width="1206"></div><figcaption>Results · <span>scroll inside</span></figcaption></figure><figure class="tile tile--m"><img src="img/ji/m-sheet.jpg" alt="Jiji search redesign, mobile: Filter sheet" loading="lazy" width="1206" height="2340"><figcaption>Filter sheet</figcaption></figure><figure class="tile tile--m is-long"><div class="tile__scroll" tabindex="0" aria-label="Compare, scroll inside"><img src="img/ji/m-compare.jpg" alt="Jiji search redesign, mobile: Compare" loading="lazy" width="1206"></div><figcaption>Compare · <span>scroll inside</span></figcaption></figure></div></div><div class="more" data-reveal><p class="label">Full story</p><h2>Want the whole story?</h2><p>The research behind it, the process, every screen and what I learned.</p><div class="more__links"><button type="button" class="btn btn--secondary" data-mode="full" data-go="problem">Read the full story <span class="arrow">→</span></button></div></div>
+      </section>
+      <section class="sec" id="learned" data-only="full">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">08 · What I learned</p><h2>What this project taught me.</h2></div></div><div class="cards cards--4" data-reveal><div class="card"><h3 style="font-size:19px">Hierarchy over removal</h3><p style="font-size:15px;color:var(--ink-soft)">An interface can hold everything a user needs and still hide what matters most.</p></div><div class="card"><h3 style="font-size:19px">Accessibility is a design choice</h3><p style="font-size:15px;color:var(--ink-soft)">Prices use a darker green because the bright brand green is hard to read on white.</p></div><div class="card"><h3 style="font-size:19px">What I’d test next</h3><p style="font-size:15px;color:var(--ink-soft)">How long it takes buyers to shortlist a product compared with Jiji today, and whether they trust the Top Pick labels.</p></div><div class="card"><h3 style="font-size:19px">Still an untested concept</h3><p style="font-size:15px;color:var(--ink-soft)">White text on the bright green buttons is also hard to read, so I’d test a darker button green next.</p></div></div>
+      </section>
+    </div>
+
+    <section class="next" data-reveal>
+      <p class="label">Next project</p>
+      <div class="next__row">
+        <a class="next__img" href="attendance.html" data-cursor="Next" aria-label="Attendance case study" style="background:var(--p-att)"><img src="img/next-att.jpg" alt="Attendance dashboard in a browser" loading="lazy" width="2184" height="1260"></a>
+        <div class="next__text"><h2>Attendance</h2><p class="tags">Web app · Real problem</p><p>Check in, check out, done.</p><a class="text-link" href="attendance.html">Read case study <span class="arrow">→</span></a></div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="wrap foot" id="contact">
+    <section class="cta on-dark" data-reveal>
+      <div class="cta__left">
+        <p class="cta__eyebrow"><i></i>OPEN TO WORK · REMOTE</p>
+        <h2>Let’s work together.</h2>
+        <p>I’m open to remote product design roles, freelance projects and collaborations. Feel free to reach out.</p>
+        <div class="cta__btns">
+          <a class="btn btn--primary" href="mailto:sulaimontoheeb400@gmail.com">Email me</a>
+          <a class="btn btn--secondary" href="https://docs.google.com/document/d/1FTQwIDMbJTH2n3hDwcGk9VsAi0eCIkIrzyoSCxBQKmU/export?format=pdf" target="_blank" rel="noopener">Download CV <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M6 2.5v7M3 6.5l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+      <div class="cta__right">
+        <p class="cta__eyebrow" style="letter-spacing:.1em">GET IN TOUCH</p>
+        <a class="cta__email" href="mailto:sulaimontoheeb400@gmail.com">sulaimontoheeb400@gmail.com</a>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/sulaimon-toheeb" target="_blank" rel="noopener">LinkedIn <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="https://www.behance.net/Sulaimon_Toheeb" target="_blank" rel="noopener">Behance <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="https://x.com/Toheeb_design" target="_blank" rel="noopener">X <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+    </section>
+    <div class="foot__bottom"><span>© 2026 Toheeb</span><span>Lagos, Nigeria · Open to remote work</span></div>
+  </footer>
+</main>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <div class="menu__top"><a class="logo" href="index.html">TOHEEB</a><button class="menu__close" id="menuClose">Close ✕</button></div>
+  <nav class="menu__links">
+    <a href="work.html"><small>01</small>Work</a>
+    <a href="about.html"><small>02</small>About</a>
+    <a href="https://docs.google.com/document/d/1FTQwIDMbJTH2n3hDwcGk9VsAi0eCIkIrzyoSCxBQKmU/export?format=pdf" target="_blank" rel="noopener"><small>03</small>Download CV</a>
+    <a href="contact.html"><small>04</small>Contact</a>
+  </nav>
+  <div class="menu__foot">
+    <p class="cta__eyebrow"><i></i>OPEN TO WORK · REMOTE · LAGOS</p>
+    <a class="menu__email" href="mailto:sulaimontoheeb400@gmail.com">sulaimontoheeb400@gmail.com <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <div class="menu__social">
+      <a href="https://www.linkedin.com/in/sulaimon-toheeb" target="_blank" rel="noopener">LinkedIn <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="https://www.behance.net/Sulaimon_Toheeb" target="_blank" rel="noopener">Behance <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="https://x.com/Toheeb_design" target="_blank" rel="noopener">X <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<script src="js/site.js"></script>
+<script src="js/case.js"></script>
+<script src="js/cursor.js"></script>
+</body>
+</html>

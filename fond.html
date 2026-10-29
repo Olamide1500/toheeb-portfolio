@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FOND · Toheeb</title>
+<meta name="description" content="Case study: FOND, a dating app that matches people on shared values, interests and relationship goals.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FOND · Toheeb">
+<meta property="og:description" content="Case study: FOND, a dating app that matches people on shared values, interests and relationship goals.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#F3F2EF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@1&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&family=Syne:wght@700&family=Hanken+Grotesk:wght@700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/viewer.css">
+<link rel="stylesheet" href="css/case.css">
+<style>:root { --proj: var(--p-fond); --tint: var(--t-fond); }</style>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="index.html">TOHEEB</a>
+    <nav class="nav" aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="https://docs.google.com/document/d/1FTQwIDMbJTH2n3hDwcGk9VsAi0eCIkIrzyoSCxBQKmU/view" target="_blank" rel="noopener">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menuOpen" aria-label="Open menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+  </div>
+</header>
+
+<main>
+  <section class="wrap cs-hero">
+    <a class="back" href="work.html"><span class="arrow">←</span> All work</a>
+    <div class="cs-top">
+      <div class="cs-intro">
+        <div class="mode" role="group" aria-label="Reading mode"><button type="button" data-mode="quick" aria-pressed="false">Quick read</button><button type="button" data-mode="full" aria-pressed="true">Full story</button></div>
+        <p class="label">02 / 07 · Mobile app · Dating · Personal concept</p>
+        <h1 class="cs-title cs-title--brand">FOND</h1>
+        <p class="cs-sub">Real connections, thoughtfully made.</p>
+        <p class="cs-lead">A dating app that matches people on shared values, interests and relationship goals, not just photos.</p>
+        <p class="for"><span class="label">For</span><span>Adults in Nigeria looking for a long-term partner</span></p>
+      </div>
+      <aside class="short">
+        <p class="label">The short version</p>
+        <dl>
+          <div><dt>Problem</dt><dd>Dating apps show what someone looks like in a second, but what they want only after days of chatting.</dd></div>
+          <div><dt>What I did</dt><dd>Designed FOND end to end: desk research, flows, greyscale wireframes, high-fidelity UI and a component system.</dd></div>
+          <div><dt>Outcome</dt><dd>65 screens · 23 components · 53 variants, with empty, error, loading and success states covered. Not yet user-tested — a 5-person test is next.</dd></div>
+        </dl>
+      </aside>
+    </div>
+    <div class="ppanel"><div class="srow srow--panel" data-drag><figure class="tile tile--m"><img src="img/fond-screens/s32.jpg" alt="FOND: Discover" loading="lazy" width="780" height="1696"><figcaption>Discover</figcaption></figure><figure class="tile tile--m is-long"><div class="tile__scroll" tabindex="0" aria-label="Compatibility, scroll inside"><img src="img/fond-screens/s39.jpg" alt="FOND: Compatibility" loading="lazy" width="780"></div><figcaption>Compatibility · <span>scroll inside</span></figcaption></figure><figure class="tile tile--m"><img src="img/fond-screens/s41.jpg" alt="FOND: Chat" loading="lazy" width="780" height="1696"><figcaption>Chat</figcaption></figure></div></div>
+    <div class="facts">
+      <div><span class="label">Role</span><span>Product designer</span></div>
+      <div><span class="label">Team</span><span>Solo</span></div>
+      <div><span class="label">Timeline</span><span>1 month</span></div>
+      <div><span class="label">Platform</span><span>iOS</span></div>
+      <div><span class="label">Tools</span><span>Figma</span></div>
+      <div><span class="label">Screens</span><span>65 · <a href="#screens" data-open-screens>See all →</a></span></div>
+    </div>
+  </section>
+
+  <div class="wrap cs-body">
+    <nav class="chapters" aria-label="On this page">
+      <span class="label">On this page</span>
+      <a href="#problem">The problem</a><a href="#research">Research</a><a href="#decisions">Key decisions</a><a href="#spotlight">Compatibility</a><a href="#visual">Visual design</a><a href="#process">Process</a><a href="#screens" data-only="full">Final screens</a><a href="#key-screens" data-only="quick">Final screens</a><a href="#screens" data-open-screens>All 65 screens</a><a href="#learned" data-only="full">What I learned</a>
+    </nav>
+
+    <div class="sections">
+      <section class="sec" id="problem">
+        <div class="sec__intro" data-reveal>
+          <div class="sec__title"><p class="label">01 · The problem</p><h2>Dating apps show you what someone looks like in a second, but what they want only after days of chatting.</h2></div>
+          <div class="sec__text" data-only="full"><p>People struggle to find partners who share their values, interests and relationship goals. Most apps are built around a photo and a fast swipe, so people burn out on matches that were never going anywhere.</p></div>
+        </div>
+        <div class="callout" data-reveal><p class="label">How might we</p><p>Help people who want something serious find others who share what matters to them, without making dating feel like a second job?</p></div>
+      </section>
+
+      <section class="sec" id="research">
+        <div class="sec__intro" data-reveal>
+          <div class="sec__title"><p class="label">02 · Research</p><h2>People aren’t short of matches. They’re short of the right ones.</h2></div>
+          <div class="sec__text" data-only="full"><p>Desk research, not interviews: published surveys on how people feel about dating apps, then brainstorming and pressure-testing ideas.</p></div>
+        </div>
+        <div class="cards cards--3" data-reveal>
+          <div class="card stat"><b>78%</b><p>of dating app users feel burned out at least sometimes</p><span class="label">Forbes Health / OnePoll, 2024</span></div>
+          <div class="card stat"><b>40%</b><p>say the main cause is not finding a good connection</p><span class="label">Forbes Health / OnePoll, 2024</span></div>
+          <div class="card stat"><b>44%</b><p>of recent users joined mainly to meet a long-term partner</p><span class="label">Pew Research Center, 2023</span></div>
+        </div>
+        <div class="cards cards--3" data-reveal data-only="full">
+          <div class="insight"><span class="label">Insight 01</span><h3>Make intent visible early</h3><p>Burnout comes from finding out late that you wanted different things.</p></div>
+          <div class="insight"><span class="label">Insight 02</span><h3>Less volume, more fit</h3><p>Too many matches overwhelms some people and leaves others feeling ignored.</p></div>
+          <div class="insight"><span class="label">Insight 03</span><h3>Safety is part of the product</h3><p>Control over who sees you shouldn’t be buried in settings.</p></div>
+        </div>
+        <p class="note" data-only="full">Surveys are US-based, so I treat them as a signal rather than proof for every market.</p>
+      </section>
+
+      <section class="sec decisions decisions--phone" id="decisions">
+        <div class="dec-track">
+          <div class="dec-pin">
+            <div class="dec-head">
+              <div class="sec__title"><p class="label">03 · Key decisions</p><h2>Three choices that shape how FOND feels.</h2></div>
+              <div class="dec-steps" aria-hidden="true"><button type="button" class="dec-step is-active" data-step="0" tabindex="-1"><span class="dec-step__n">01</span><span class="dec-step__t">Less volume, more fit</span><i><b></b></i></button><button type="button" class="dec-step" data-step="1" tabindex="-1"><span class="dec-step__n">02</span><span class="dec-step__t">Make intent visible early</span><i><b></b></i></button><button type="button" class="dec-step" data-step="2" tabindex="-1"><span class="dec-step__n">03</span><span class="dec-step__t">Safety is part of the product</span><i><b></b></i></button></div>
+            </div>
+            <div class="dec-stage">
+            <article class="decision is-active" data-i="0"><div class="figure"><img src="img/fond-dec-1.jpg" alt="The Discover screen with Pass and Interested buttons" loading="lazy" width="1120" height="1900"></div><div class="decision__text"><span class="decision__num">01</span><h3>Pass or Interested, not a swipe</h3><p>Two labelled buttons make each choice feel quicker and calmer. You read the card, then give one clear answer. “Interested” says you’d like to talk, not that you’re rating someone.</p><span class="answers" data-only="full">Answers: less volume, more fit</span></div></article>
+            <article class="decision" data-i="1"><div class="figure"><img src="img/fond-dec-2.jpg" alt="Sign-up step asking what you are looking for" loading="lazy" width="1120" height="1900"></div><div class="decision__text"><span class="decision__num">02</span><h3>Relationship goals up front</h3><p>Sign-up asks “What are you looking for?” with honest options: Long-term partner, Open to see, or Not sure yet. The same choice appears in Filters, so intent is clear before anyone says hello.</p><span class="answers" data-only="full">Answers: make intent visible early</span></div></article>
+            <article class="decision" data-i="2"><div class="figure"><img src="img/fond-dec-3.jpg" alt="Security and privacy with the Who can see my profile sheet open" loading="lazy" width="1120" height="1900"></div><div class="decision__text"><span class="decision__num">03</span><h3>Control over who sees you</h3><p>People choose who can see their profile: everyone, matches only, people they’ve liked, or no one. Blocked users and active devices live in the same place.</p><span class="answers" data-only="full">Answers: safety is part of the product</span></div></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec" id="spotlight">
+        <div class="sec__intro" data-reveal>
+          <div class="sec__title"><p class="label">04 · Feature spotlight</p><h2>Compatibility you can actually read.</h2></div>
+          <div class="sec__text"><p>A single number isn’t enough to trust. The match profile shows the score, and one tap opens the full breakdown: relationship goals, shared interests, lifestyle, and age and location. It ends with a ready-made first question, so nobody stares at an empty chat.</p></div>
+        </div>
+        <div class="ppanel" data-reveal><div class="srow srow--panel" data-drag><figure class="tile tile--m is-long"><div class="tile__scroll" tabindex="0" aria-label="Match profile, scroll inside"><img src="img/fond-screens/s37.jpg" alt="FOND: Match profile" loading="lazy" width="780"></div><figcaption>Match profile · <span>scroll inside</span></figcaption></figure><figure class="tile tile--m is-long"><div class="tile__scroll" tabindex="0" aria-label="Compatibility, scroll inside"><img src="img/fond-screens/s39.jpg" alt="FOND: Compatibility" loading="lazy" width="780"></div><figcaption>Compatibility breakdown · <span>scroll inside</span></figcaption></figure><figure class="tile tile--m"><img src="img/fond-screens/s41.jpg" alt="FOND: Chat" loading="lazy" width="780" height="1696"><figcaption>First message</figcaption></figure></div></div>
+      </section>
+
+      <section class="sec" id="visual">
+        <div class="sec__intro" data-reveal>
+          <div class="sec__title"><p class="label">05 · Visual design</p><h2>Calm, warm and a little romantic.</h2></div>
+          <div class="sec__text"><p>Most dating apps shout in bright pink and red. FOND uses a deep wine on soft cream, so it feels more like a quiet coffee date than a night out.</p></div>
+        </div>
+        <div class="swatches" data-reveal>
+          <div><i style="background:#6E2A42"></i>Wine · primary<span>#6E2A42</span></div>
+          <div><i style="background:#512033"></i>Deep wine<span>#512033</span></div>
+          <div><i style="background:#E7D3D9"></i>Blush<span>#E7D3D9</span></div>
+          <div><i style="background:#F6F2EC;box-shadow:inset 0 0 0 1px var(--line)"></i>Cream<span>#F6F2EC</span></div>
+          <div><i style="background:#241C22"></i>Ink<span>#241C22</span></div>
+        </div>
+        <div class="typecards" data-reveal>
+          <div class="card"><b style="font-family:Syne,var(--f-display)">Aa</b><span style="font-size:18px">Syne</span><span style="font-size:15px;color:var(--ink-soft)">Wordmark and headings. Gives FOND its own character.</span></div>
+          <div class="card"><b style="font-family:'Hanken Grotesk',var(--f-sans)">Aa</b><span style="font-size:18px">Hanken Grotesk</span><span style="font-size:15px;color:var(--ink-soft)">All interface text. Clear and easy to read at small sizes.</span></div>
+        </div>
+        <p class="label">Components · 23 components, 53 variants · slide for more →</p>
+        <div class="srow srow--comp" data-drag data-reveal>
+          <figure class="tile tile--c"><img src="img/fond-comp-1.jpg" alt="Buttons: filled, outlined and disabled" loading="lazy"></figure>
+          <figure class="tile tile--c"><img src="img/fond-comp-2.jpg" alt="Navigation: bottom tab bar, one state per tab" loading="lazy"></figure>
+          <figure class="tile tile--c"><img src="img/fond-comp-3.jpg" alt="Text fields: default, typing, error and correct" loading="lazy"></figure>
+          <figure class="tile tile--c"><img src="img/fond-comp-4.jpg" alt="Password fields: show and hide" loading="lazy"></figure>
+          <figure class="tile tile--c"><img src="img/fond-comp-5.jpg" alt="Controls and icons" loading="lazy"></figure>
+          <figure class="tile tile--c"><img src="img/fond-comp-6.jpg" alt="Discover card" loading="lazy"></figure>
+          <figure class="tile tile--c"><img src="img/fond-comp-7.jpg" alt="Phone number field and the email or phone toggle for sending a code" loading="lazy"></figure>
+        </div>
+      </section>
+
+      <section class="sec" id="process">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">06 · Process</p><h2>From grey boxes to a finished app in one month.</h2></div></div>
+        <div class="cards cards--3" data-reveal data-only="full">
+          <div class="card"><span class="label">Step 01</span><h3 style="font-size:18px">Map the flows</h3><p style="font-size:15px;color:var(--ink-soft)">Onboarding, discovery, matching, chat, profile, settings and recovery, grouped into nine sections.</p></div>
+          <div class="card"><span class="label">Step 02</span><h3 style="font-size:18px">Low fidelity</h3><p style="font-size:15px;color:var(--ink-soft)">The whole app in greyscale first. Structure decisions happen here.</p></div>
+          <div class="card"><span class="label">Step 03</span><h3 style="font-size:18px">High fidelity</h3><p style="font-size:15px;color:var(--ink-soft)">Colour, photography, components, and every empty, error, loading and success state.</p></div>
+        </div>
+        <div class="ppanel" data-reveal><div class="srow srow--panel" data-drag><figure class="tile tile--m"><img src="img/fond-lofi.jpg" alt="FOND Discover screen as a greyscale low-fidelity wireframe" loading="lazy" width="780" height="1696"><figcaption>Low-fi · layout A</figcaption></figure><figure class="tile tile--m"><img src="img/fond-disc-b.jpg" alt="FOND Discover screen, a second greyscale layout with a full-photo card" loading="lazy" width="1206" height="2622"><figcaption>Low-fi · layout B</figcaption></figure><figure class="tile tile--m"><img src="img/fond-screens/s32.jpg" alt="FOND: Discover" loading="lazy" width="780" height="1696"><figcaption>Final</figcaption></figure></div></div>
+      </section>
+
+      <section class="sec" id="screens" data-only="full">
+        <div class="sec__intro" data-reveal>
+          <div class="sec__title"><p class="label">07 · Final screens</p><h2>All 65 screens, in one view.</h2></div>
+          <div class="sec__text"><p>9 flows, from the first open to settings, including 3 edge cases. The main flows are also shown larger below.</p></div>
+        </div>
+        <div class="wall-cta" data-reveal><button type="button" class="btn btn--primary" data-open-screens>Open all 65 screens <span class="arrow">→</span></button><span class="legend"><i></i>3 edge cases: an error, empty or loading screen</span></div>
+        <p class="label" style="margin-top:12px">Main flows · full size</p>
+        <div class="flow" data-reveal><div class="flow__head"><h3>Onboarding</h3><span class="label">9 screens · slide for more →</span></div><div class="srow srow--m" data-drag><figure class="tile tile--m"><img src="img/fond-screens/s01.jpg" alt="FOND: Splash" loading="lazy" width="780" height="1696"><figcaption>Splash</figcaption></figure><figure class="tile tile--m"><img src="img/fond-screens/s05.jpg" alt="FOND: Welcome" loading="lazy" width="780" height="1696"><figcaption>Welcome</figcaption></figure><figure class="tile tile--m"><img src="img/fond-screens/s06.jpg" alt="FOND: Phone number" loading="lazy" width="780" height="1696"><figcaption>Create account</figcaption></figure><figure class="tile tile--m"><img src="img/fond-screens/s08.jpg" alt="FOND: Enter code" loading="lazy" width="780" height="1696"><figcaption>Verify code</figcaption></figure><figure class="tile tile--m"><img src="img/fond-screens/s12.jpg" alt="FOND: Your name" loading="lazy" width="780" height="1696"><figcaption>Your name</figcaption></figure><figure class="tile tile--m"><img src="img/fond-screens/s14.jpg" alt="FOND: Birthday" loading="lazy" width="780" height="1696"><figcaption>Birthday</figcaption></figure><figure class="tile tile--m"><img src="img/fond-screens/s16.jpg" alt="FOND: Interests" loading="lazy" width="780" height="1696"><figcaption>Interests</figcaption></figure><figure class="tile tile--m"><img src="img/fond-screens/s20.jpg" alt="FOND: What you’re looking for" loading="lazy" width="780" height="1696"><figcaption>Looking for</figcaption></figure><figure class="tile tile--m"><img src="img/fond-screens/s21.jpg" alt="FOND: Location" loading="lazy" width="780" height="1696"><figcaption>Location</figcaption></figure></div></div><div class="flow" data-reveal><div class="flow__head"><h3>Discover and match</h3><span class="label">8 screens · slide for more →</span></div><div class="srow srow--m" data-drag><figure class="tile tile--m"><img src="img/fond-screens/s32.jpg" alt="FOND: Discover" loading="lazy" width="780" height="1696"><figcaption>Discover</figcaption></figure><figure class="tile tile--m"><img src="img/fond-screens/s33.jpg" alt="FOND: Discover · full photo" loading="lazy" width="780" height="1696"><figcaption>Discover · full photo</figcaption></figure><figure class="tile tile--m"><img src="img/fond-screens/s34.jpg" alt="FOND: Filter and search" loading="lazy" width="780" height="1696"><figcaption>Filter and search</figcaption></figure><figure class="tile tile--m"><img src="img/fond-screens/s35.jpg" alt="FOND: No matches yet" loading="lazy" width="780" height="1696"><figcaption>No matches yet</figcaption></figure><figure class="tile tile--m"><img src="img/fond-screens/s36.jpg" alt="FOND: Matches" loading="lazy" width="780" height="1696"><figcaption>Matches</figcaption></figure><figure class="tile tile--m is-long"><div class="tile__scroll" tabindex="0" aria-label="Match profile, scroll inside"><img src="img/fond-screens/s37.jpg" alt="FOND: Match profile" loading="lazy" width="780"></div><figcaption>Match profile · <span>scroll inside</span></figcaption></figure><figure class="tile tile--m"><img src="img/fond-screens/s38.jpg" alt="FOND: It’s a match" loading="lazy" width="780" height="1696"><figcaption>It’s a match</figcaption></figure><figure class="tile tile--m is-long"><div class="tile__scroll" tabindex="0" aria-label="Compatibility, scroll inside"><img src="img/fond-screens/s39.jpg" alt="FOND: Compatibility" loading="lazy" width="780"></div><figcaption>Compatibility · <span>scroll inside</span></figcaption></figure></div></div><div class="flow" data-reveal><div class="flow__head"><h3>Messages</h3><span class="label">2 screens · slide for more →</span></div><div class="srow srow--m" data-drag><figure class="tile tile--m"><img src="img/fond-screens/s40.jpg" alt="FOND: Messages" loading="lazy" width="780" height="1696"><figcaption>Messages</figcaption></figure><figure class="tile tile--m"><img src="img/fond-screens/s41.jpg" alt="FOND: Chat" loading="lazy" width="780" height="1696"><figcaption>Chat</figcaption></figure></div></div><div class="flow" data-reveal><div class="flow__head"><h3>Profile and safety</h3><span class="label">9 screens · slide for more →</span></div><div class="srow srow--m" data-drag><figure class="tile tile--m is-long"><div class="tile__scroll" tabindex="0" aria-label="Profile, scroll inside"><img src="img/fond-screens/s42.jpg" alt="FOND: Profile" loading="lazy" width="780"></div><figcaption>Profile · <span>scroll inside</span></figcaption></figure><figure class="tile tile--m"><img src="img/fond-screens/s43.jpg" alt="FOND: Edit profile" loading="lazy" width="780" height="1696"><figcaption>Edit profile</figcaption></figure><figure class="tile tile--m"><img src="img/fond-screens/s44.jpg" alt="FOND: Photo" loading="lazy" width="780" height="1696"><figcaption>Photos</figcaption></figure><figure class="tile tile--m"><img src="img/fond-screens/s45.jpg" alt="FOND: Verified" loading="lazy" width="780" height="1696"><figcaption>Verified</figcaption></figure><figure class="tile tile--m"><img src="img/fond-screens/s46.jpg" alt="FOND: Settings" loading="lazy" width="780" height="1696"><figcaption>Settings</figcaption></figure><figure class="tile tile--m"><img src="img/fond-screens/s47.jpg" alt="FOND: Security & privacy" loading="lazy" width="780" height="1696"><figcaption>Security & privacy</figcaption></figure><figure class="tile tile--m"><img src="img/fond-screens/s56.jpg" alt="FOND: Who can see you" loading="lazy" width="780" height="1696"><figcaption>Who can see you</figcaption></figure><figure class="tile tile--m"><img src="img/fond-screens/s58.jpg" alt="FOND: Blocked user" loading="lazy" width="780" height="1696"><figcaption>Blocked user</figcaption></figure><figure class="tile tile--m"><img src="img/fond-screens/s64.jpg" alt="FOND: Report problem" loading="lazy" width="780" height="1696"><figcaption>Report a problem</figcaption></figure></div></div>
+      </section>
+
+      <section class="sec" id="key-screens" data-only="quick">
+        <div class="sec__intro" data-reveal>
+          <div class="sec__title"><p class="label">07 · Final screens</p><h2>65 screens, one consistent system.</h2></div>
+          <div class="sec__text"><p>A few key screens at full size. The full story has all 65.</p></div>
+        </div>
+        <div class="flow" data-reveal><div class="flow__head"><h3>Key screens</h3><span class="label">6 screens · slide for more →</span></div><div class="srow srow--m" data-drag><figure class="tile tile--m"><img src="img/fond-screens/s32.jpg" alt="FOND: Discover" loading="lazy" width="780" height="1696"><figcaption>Discover</figcaption></figure><figure class="tile tile--m is-long"><div class="tile__scroll" tabindex="0" aria-label="Compatibility, scroll inside"><img src="img/fond-screens/s39.jpg" alt="FOND: Compatibility" loading="lazy" width="780"></div><figcaption>Compatibility · <span>scroll inside</span></figcaption></figure><figure class="tile tile--m"><img src="img/fond-screens/s41.jpg" alt="FOND: Chat" loading="lazy" width="780" height="1696"><figcaption>Chat</figcaption></figure><figure class="tile tile--m is-long"><div class="tile__scroll" tabindex="0" aria-label="Match profile, scroll inside"><img src="img/fond-screens/s37.jpg" alt="FOND: Match profile" loading="lazy" width="780"></div><figcaption>Match profile · <span>scroll inside</span></figcaption></figure><figure class="tile tile--m"><img src="img/fond-screens/s56.jpg" alt="FOND: Who can see you" loading="lazy" width="780" height="1696"><figcaption>Who can see you</figcaption></figure><figure class="tile tile--m"><img src="img/fond-screens/s64.jpg" alt="FOND: Report problem" loading="lazy" width="780" height="1696"><figcaption>Report a problem</figcaption></figure></div></div>
+        <div class="more" data-reveal>
+          <p class="label">Full story</p>
+          <h2>Want the whole story?</h2>
+          <p>The research behind it, the process, every screen and what I learned.</p>
+          <div class="more__links"><button type="button" class="btn btn--secondary" data-mode="full" data-go="problem">Read the full story <span class="arrow">→</span></button><a class="text-link" href="#screens" data-open-screens>See all 65 screens</a></div>
+        </div>
+      </section>
+
+      <section class="sec" id="learned" data-only="full">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">08 · What I learned</p><h2>What FOND taught me.</h2></div></div>
+        <div class="cards cards--4" data-reveal>
+          <div class="card"><h3 style="font-size:19px">Details make it real</h3><p style="font-size:15px;color:var(--ink-soft)">The empty states, errors and small settings make an app feel finished.</p></div>
+          <div class="card"><h3 style="font-size:19px">Words shape feelings</h3><p style="font-size:15px;color:var(--ink-soft)">Changing “Like” to “Interested” did more for the tone than any colour choice.</p></div>
+          <div class="card"><h3 style="font-size:19px">Systems save time</h3><p style="font-size:15px;color:var(--ink-soft)">Building components first kept 65 screens consistent and made late changes painless.</p></div>
+          <div class="card"><h3 style="font-size:19px">People come first</h3><p style="font-size:15px;color:var(--ink-soft)">Next time I’ll put a prototype in front of real users before I reach high fidelity.</p></div>
+        </div>
+      </section>
+    </div>
+
+    <section class="next" data-reveal>
+      <p class="label">Next project</p>
+      <div class="next__row">
+        <a class="next__img" href="#" data-cursor="Next" aria-label="GradSave case study" style="background:var(--p-grad)"><img src="img/next-grad.jpg" alt="GradSave app: Home and Goal details screens" loading="lazy" width="1456" height="840"></a>
+        <div class="next__text">
+          <h2>GradSave</h2>
+          <p class="tags">Mobile app · Student savings</p>
+          <p>A student savings app with goal locks.</p>
+          <a class="text-link" href="#">Read case study <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="wrap foot" id="contact">
+    <section class="cta on-dark" data-reveal>
+      <div class="cta__left">
+        <p class="cta__eyebrow"><i></i>OPEN TO WORK · REMOTE</p>
+        <h2>Let’s work together.</h2>
+        <p>I’m open to remote product design roles, freelance projects and collaborations. Feel free to reach out.</p>
+        <div class="cta__btns">
+          <a class="btn btn--primary" href="mailto:sulaimontoheeb400@gmail.com">Email me</a>
+          <a class="btn btn--secondary" href="https://docs.google.com/document/d/1FTQwIDMbJTH2n3hDwcGk9VsAi0eCIkIrzyoSCxBQKmU/export?format=pdf" target="_blank" rel="noopener">Download CV <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M6 2.5v7M3 6.5l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+      <div class="cta__right">
+        <p class="cta__eyebrow" style="letter-spacing:.1em">GET IN TOUCH</p>
+        <a class="cta__email" href="mailto:sulaimontoheeb400@gmail.com">sulaimontoheeb400@gmail.com</a>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/sulaimon-toheeb" target="_blank" rel="noopener">LinkedIn <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="https://www.behance.net/Sulaimon_Toheeb" target="_blank" rel="noopener">Behance <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="https://x.com/Toheeb_design" target="_blank" rel="noopener">X <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+    </section>
+    <div class="foot__bottom"><span>© 2026 Toheeb</span><span>Lagos, Nigeria · Open to remote work</span></div>
+  </footer>
+</main>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <div class="menu__top"><a class="logo" href="index.html">TOHEEB</a><button class="menu__close" id="menuClose">Close ✕</button></div>
+  <nav class="menu__links">
+    <a href="work.html"><small>01</small>Work</a>
+    <a href="about.html"><small>02</small>About</a>
+    <a href="https://docs.google.com/document/d/1FTQwIDMbJTH2n3hDwcGk9VsAi0eCIkIrzyoSCxBQKmU/export?format=pdf" target="_blank" rel="noopener"><small>03</small>Download CV</a>
+    <a href="contact.html"><small>04</small>Contact</a>
+  </nav>
+  <div class="menu__foot">
+    <p class="cta__eyebrow"><i></i>OPEN TO WORK · REMOTE · LAGOS</p>
+    <a class="menu__email" href="mailto:sulaimontoheeb400@gmail.com">sulaimontoheeb400@gmail.com <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <div class="menu__social">
+      <a href="https://www.linkedin.com/in/sulaimon-toheeb" target="_blank" rel="noopener">LinkedIn <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="https://www.behance.net/Sulaimon_Toheeb" target="_blank" rel="noopener">Behance <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="https://x.com/Toheeb_design" target="_blank" rel="noopener">X <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<script src="js/site.js"></script>
+<script src="js/fond-screens.js"></script>
+<script src="js/viewer.js"></script>
+<script src="js/case.js"></script>
+<script src="js/cursor.js"></script>
+</body>
+</html>

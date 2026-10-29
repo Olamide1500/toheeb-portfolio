@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>WAEC result checker · Toheeb</title>
+<meta name="description" content="Case study: an unsolicited redesign of the WAEC result checker that explains every box.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="WAEC result checker · Toheeb">
+<meta property="og:description" content="Case study: an unsolicited redesign of the WAEC result checker that explains every box.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#F3F2EF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@1&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&family=Inter:wght@700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/viewer.css">
+<link rel="stylesheet" href="css/case.css">
+<style>:root { --proj: var(--p-waec); --tint: var(--t-waec); }</style>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="index.html">TOHEEB</a>
+    <nav class="nav" aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="https://docs.google.com/document/d/1FTQwIDMbJTH2n3hDwcGk9VsAi0eCIkIrzyoSCxBQKmU/view" target="_blank" rel="noopener">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menuOpen" aria-label="Open menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+  </div>
+</header>
+
+<main>
+  <section class="wrap cs-hero">
+    <a class="back" href="work.html"><span class="arrow">←</span> All work</a>
+    <div class="cs-top">
+      <div class="cs-intro">
+        <div class="mode" role="group" aria-label="Reading mode"><button type="button" data-mode="quick" aria-pressed="false">Quick read</button><button type="button" data-mode="full" aria-pressed="true">Full story</button></div>
+        <p class="label">05 / 07 · Web · Education · Unsolicited redesign</p>
+        <h1 class="cs-title">WAEC result checker</h1>
+        <p class="cs-sub">Know what goes in every box.</p>
+        <p class="cs-lead">A redesign of waecdirect.org that keeps the same structure, but shows students exactly what goes in each box, so fewer checks are wasted.</p>
+        <p class="for"><span class="label">For</span><span>School and private candidates checking results online</span></p>
+      </div>
+      <aside class="short">
+        <p class="label">The short version</p>
+        <dl>
+          <div><dt>Problem</dt><dd>The result checker asks for 5 details, and a wrong one still uses up a check on the card. The page doesn’t say what goes where.</dd></div>
+          <div><dt>What I did</dt><dd>Kept waecdirect.org’s structure and redesigned the result checker screen. A tip under every box, a picture of the card and an SMS option, in WAEC colours.</dd></div>
+          <div><dt>Outcome</dt><dd>A desktop and mobile web redesign of the result checker screen, in WAEC colours. Unsolicited concept, not affiliated with WAEC.</dd></div>
+        </dl>
+      </aside>
+    </div>
+    <div class="hero-tile"><figure class="tile tile--d is-long"><div class="tile__win"><div class="tile__scroll" tabindex="0" aria-label="Final · hi-fi, scroll inside"><img src="img/wa/desk-hifi.jpg" alt="WAEC result checker: Final · hi-fi" loading="lazy"></div></div><figcaption>Final · hi-fi · <span>scroll inside</span></figcaption></figure></div>
+    <div class="facts"><div><span class="label">Role</span><span>Product designer</span></div><div><span class="label">Team</span><span>Solo</span></div><div><span class="label">Type</span><span>Unsolicited concept</span></div><div><span class="label">Platform</span><span>Web · desktop + mobile</span></div><div><span class="label">Tools</span><span>Figma</span></div></div>
+  </section>
+
+  <div class="wrap cs-body">
+    <nav class="chapters" aria-label="On this page"><span class="label">On this page</span><a href="#problem">The problem</a><a href="#started">Where it started</a><a href="#decisions">Key decisions</a><a href="#before-after">Before and after</a><a href="#visual">Visual design</a><a href="#process" data-only="full">Process</a><a href="#variant" data-only="full">Mobile variant</a><a href="#screens" data-only="full">Final screens</a><a href="#key-screens" data-only="quick">Final screens</a><a href="#learned" data-only="full">What I learned</a></nav>
+    <div class="sections">
+      <section class="sec" id="problem">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">01 · The problem</p><h2>Five boxes. Every wrong one costs a check.</h2></div><div class="sec__text" data-only="full"><p>To check a result on waecdirect.org, a candidate fills in their exam number, exam year, exam type, the card’s serial number and its PIN. Each card works a set number of times, and wrong details still count as a use. The page doesn’t say what goes in each box.</p></div></div><div class="callout" data-reveal><p class="label">How might we</p><p>Help students fill every box right the first time, so no check on their card is wasted?</p></div>
+      </section>
+      <section class="sec" id="started">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">02 · Where it started</p><h2>The structure was fine. The guidance wasn’t.</h2></div><div class="sec__text" data-only="full"><p>This is an unsolicited redesign. I studied the live waecdirect.org page and the e-PIN card itself, not WAEC’s data.</p></div></div><div class="cards cards--3" data-reveal><div class="card stat"><b>5</b><p>boxes to fill before you see a result</p><span class="label">waecdirect.org</span></div><div class="card stat"><b>10</b><p>digits in the exam number: a 7-digit centre number, then a 3-digit candidate number</p><span class="label">Exam slip</span></div><div class="card stat"><b>1</b><p>use gone from the card for every attempt with wrong details</p><span class="label">Card rules</span></div></div><div class="cards cards--3" data-reveal data-only="full"><div class="insight"><span class="label">Insight 01</span><h3>Keep what they know</h3><p>Students who know the page shouldn’t have to relearn it.</p></div><div class="insight"><span class="label">Insight 02</span><h3>Show, don’t describe</h3><p>The serial and PIN are easier to find on a picture of the card.</p></div><div class="insight"><span class="label">Insight 03</span><h3>Data isn’t a given</h3><p>A slow site shouldn’t block a result. SMS should sit next to the form.</p></div></div><p class="note" data-only="full">Based on the public page and the card, not interviews, so I treat it as a hypothesis to test.</p>
+      </section>
+      <section class="sec decisions" id="decisions">
+        <div class="dec-track"><div class="dec-pin">
+          <div class="dec-head"><div class="sec__title"><p class="label">03 · Key decisions</p><h2>What I changed, and why.</h2></div><div class="dec-steps" aria-hidden="true"><button type="button" class="dec-step is-active" data-step="0" tabindex="-1"><span class="dec-step__n">01</span><span class="dec-step__t">No guessing</span><i><b></b></i></button><button type="button" class="dec-step" data-step="1" tabindex="-1"><span class="dec-step__n">02</span><span class="dec-step__t">Fewer wasted checks</span><i><b></b></i></button><button type="button" class="dec-step" data-step="2" tabindex="-1"><span class="dec-step__n">03</span><span class="dec-step__t">No dead ends</span><i><b></b></i></button></div></div>
+          <div class="dec-stage">
+            <article class="decision is-active" data-i="0"><div class="figure"><img src="img/wa/dec-1.jpg" alt="The result checker form with a tip under every box" loading="lazy"></div><div class="decision__text"><span class="decision__num">01</span><h3>A tip under every box</h3><p>Each box says what goes in it, like “10 digits: your 7-digit centre number, then your 3-digit candidate number.” No guessing, and a warning that wrong details still use up a check.</p><span class="answers" data-only="full">Answers: no guessing</span></div></article>
+            <article class="decision" data-i="1"><div class="figure"><img src="img/wa/dec-2.jpg" alt="The step-by-step guide with a picture of the e-PIN card" loading="lazy"></div><div class="decision__text"><span class="decision__num">02</span><h3>A card guide</h3><p>A picture of the e-PIN card shows where the serial number and the scratch PIN are, matching boxes 4 and 5.</p><span class="answers" data-only="full">Answers: fewer wasted checks</span></div></article>
+            <article class="decision" data-i="2"><div class="figure"><img src="img/wa/dec-3.jpg" alt="The SMS option and support numbers next to the form" loading="lazy"></div><div class="decision__text"><span class="decision__num">03</span><h3>SMS and help, up front</h3><p>The SMS format and support numbers sit next to the form, so nobody is stuck if the site is slow.</p><span class="answers" data-only="full">Answers: no dead ends</span></div></article>
+          </div>
+        </div></div>
+      </section>
+      <section class="sec" id="before-after">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">04 · Before and after</p><h2>Same page. Now it explains itself.</h2></div><div class="sec__text" data-only="full"><p>The live page asks for 5 details with no guidance and gives no hint that a wrong detail still uses up a check. The redesign keeps every box in the same order, then adds a tip under each one, a picture of the card, a clear warning before you submit, and SMS as a way through without data.</p></div></div><div class="srow srow--d" data-drag data-reveal><figure class="tile tile--d"><div class="tile__win"><img src="img/wa/before.jpg" alt="WAEC result checker: Before · waecdirect.org today" loading="lazy"></div><figcaption>Before · waecdirect.org today</figcaption></figure><figure class="tile tile--d is-long"><div class="tile__win"><div class="tile__scroll" tabindex="0" aria-label="After · redesign, scroll inside"><img src="img/wa/desk-hifi.jpg" alt="WAEC result checker: After · redesign" loading="lazy"></div></div><figcaption>After · redesign · <span>scroll inside</span></figcaption></figure></div>
+      </section>
+      <section class="sec" id="visual">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">05 · Visual design</p><h2>Same structure, WAEC colours.</h2></div><div class="sec__text" data-only="full"><p>Blue #003366 leads: the header band, buttons and step numbers. Royal blue draws the card picture, and the guide panel uses the yellow from waecdirect.org, so the page still feels like WAEC.</p></div></div><div class="swatches" data-reveal><div><i style="background:#003366"></i>Blue · primary<span>#003366</span></div><div><i style="background:#002244"></i>Deep blue<span>#002244</span></div><div><i style="background:#1A4B8C"></i>Royal blue<span>#1A4B8C</span></div><div><i style="background:#E5D97F"></i>Guide yellow<span>#E5D97F</span></div><div><i style="background:#FFCC00"></i>Gold<span>#FFCC00</span></div></div><div class="typecards" data-reveal><div class="card"><b style="font-family:Inter,var(--f-sans)">Aa</b><span style="font-size:18px">Inter</span><span style="font-size:15px;color:var(--ink-soft)">Every heading, label and tip.</span></div><div class="card"><b style="font-family:Inter,var(--f-sans)">4</b><span style="font-size:18px">4 weights</span><span style="font-size:15px;color:var(--ink-soft)">Regular, Medium, Semi Bold and Bold</span></div></div>
+      </section>
+      <section class="sec" id="process" data-only="full">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">06 · Process</p><h2>Study, keep, then guide.</h2></div></div><div class="cards cards--3" data-reveal data-only="full"><div class="card"><span class="label">Step 01</span><h3 style="font-size:18px">Study the live page</h3><p style="font-size:15px;color:var(--ink-soft)">Mapped every box on waecdirect.org and every number on the e-PIN card.</p></div><div class="card"><span class="label">Step 02</span><h3 style="font-size:18px">Mid-fi, same structure</h3><p style="font-size:15px;color:var(--ink-soft)">Kept the layout, then added tips, the card guide and SMS in grayscale.</p></div><div class="card"><span class="label">Step 03</span><h3 style="font-size:18px">Hi-fi in WAEC colours</h3><p style="font-size:15px;color:var(--ink-soft)">WAEC blue, gold and logo, at desktop 1440 and mobile web 390.</p></div></div><div class="srow srow--d" data-drag data-reveal><figure class="tile tile--d is-long"><div class="tile__win"><div class="tile__scroll" tabindex="0" aria-label="Mid-fi, scroll inside"><img src="img/wa/desk-mid.jpg" alt="WAEC result checker: Mid-fi" loading="lazy"></div></div><figcaption>Mid-fi · <span>scroll inside</span></figcaption></figure><figure class="tile tile--d is-long"><div class="tile__win"><div class="tile__scroll" tabindex="0" aria-label="Hi-fi, scroll inside"><img src="img/wa/desk-hifi.jpg" alt="WAEC result checker: Hi-fi" loading="lazy"></div></div><figcaption>Hi-fi · <span>scroll inside</span></figcaption></figure></div>
+      </section>
+      <section class="sec" id="variant" data-only="full">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">07 · A mobile variant</p><h2>One step per screen, and what happens when it goes wrong.</h2></div><div class="sec__text" data-only="full"><p>On mobile I also explored a step-by-step version in grayscale: one question per screen, from exam details to the result, with SMS as a way out. Then I designed five states for when things go wrong, so a student is never left on a dead end.</p></div></div><div class="flow" data-reveal><div class="flow__head"><h3>Main flow · one step per screen</h3><span class="label">7 screens · slide for more →</span></div><div class="srow srow--m" data-drag><figure class="tile tile--m"><img src="img/wa/m01.jpg" alt="WAEC mobile variant, grayscale: Start" loading="lazy" width="1170" height="2532"><figcaption>Start</figcaption></figure><figure class="tile tile--m"><img src="img/wa/m02.jpg" alt="WAEC mobile variant, grayscale: Exam details" loading="lazy" width="1170" height="2532"><figcaption>Exam details</figcaption></figure><figure class="tile tile--m"><img src="img/wa/m03.jpg" alt="WAEC mobile variant, grayscale: Verify" loading="lazy" width="1170" height="2532"><figcaption>Verify</figcaption></figure><figure class="tile tile--m"><img src="img/wa/m04.jpg" alt="WAEC mobile variant, grayscale: Enter code" loading="lazy" width="1170" height="2532"><figcaption>Enter code</figcaption></figure><figure class="tile tile--m"><img src="img/wa/m05.jpg" alt="WAEC mobile variant, grayscale: Result checker card" loading="lazy" width="1170" height="2532"><figcaption>Result checker card</figcaption></figure><figure class="tile tile--m is-long"><div class="tile__scroll" tabindex="0" aria-label="Result, scroll inside"><img src="img/wa/m06.jpg" alt="WAEC mobile variant, grayscale: Result" loading="lazy" width="1170"></div><figcaption>Result · <span>scroll inside</span></figcaption></figure><figure class="tile tile--m"><img src="img/wa/m07.jpg" alt="WAEC mobile variant, grayscale: Check by SMS" loading="lazy" width="1170" height="2532"><figcaption>Check by SMS</figcaption></figure></div></div><div class="flow" data-reveal><div class="flow__head"><h3>When things go wrong</h3><span class="label">5 screens · slide for more →</span></div><div class="srow srow--m" data-drag><figure class="tile tile--m"><img src="img/wa/s1.jpg" alt="WAEC mobile variant, grayscale: Busy queue" loading="lazy" width="1170" height="2532"><figcaption>Busy queue</figcaption></figure><figure class="tile tile--m"><img src="img/wa/s2.jpg" alt="WAEC mobile variant, grayscale: Result not found" loading="lazy" width="1170" height="2532"><figcaption>Result not found</figcaption></figure><figure class="tile tile--m"><img src="img/wa/s3.jpg" alt="WAEC mobile variant, grayscale: Card linked to another candidate" loading="lazy" width="1170" height="2532"><figcaption>Card linked to another candidate</figcaption></figure><figure class="tile tile--m"><img src="img/wa/s4.jpg" alt="WAEC mobile variant, grayscale: No NIN on record" loading="lazy" width="1170" height="2532"><figcaption>No NIN on record</figcaption></figure><figure class="tile tile--m"><img src="img/wa/s5.jpg" alt="WAEC mobile variant, grayscale: Result withheld" loading="lazy" width="1170" height="2532"><figcaption>Result withheld</figcaption></figure></div></div>
+      </section>
+      <section class="sec" id="screens" data-only="full">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">08 · Final screens</p><h2>One screen, desktop and mobile web.</h2></div><div class="sec__text"><p>Every screen at full size. Each row scrolls sideways, and long pages scroll inside their window.</p></div></div><div class="flow" data-reveal><div class="flow__head"><h3>Desktop</h3><span class="label">2 screens · slide for more →</span></div><div class="srow srow--d" data-drag><figure class="tile tile--d is-long"><div class="tile__win"><div class="tile__scroll" tabindex="0" aria-label="Final · hi-fi, scroll inside"><img src="img/wa/desk-hifi.jpg" alt="WAEC result checker: Final · hi-fi" loading="lazy"></div></div><figcaption>Final · hi-fi · <span>scroll inside</span></figcaption></figure><figure class="tile tile--d is-long"><div class="tile__win"><div class="tile__scroll" tabindex="0" aria-label="Mid-fi, scroll inside"><img src="img/wa/desk-mid.jpg" alt="WAEC result checker: Mid-fi" loading="lazy"></div></div><figcaption>Mid-fi · <span>scroll inside</span></figcaption></figure></div></div><div class="flow" data-reveal><div class="flow__head"><h3>Mobile web</h3><span class="label">2 screens · slide for more →</span></div><div class="srow srow--m" data-drag><figure class="tile tile--m is-long"><div class="tile__scroll" tabindex="0" aria-label="Final · hi-fi, scroll inside"><img src="img/wa/mob-hifi.jpg" alt="WAEC result checker, mobile web: Final · hi-fi" loading="lazy" width="1170"></div><figcaption>Final · hi-fi · <span>scroll inside</span></figcaption></figure><figure class="tile tile--m is-long"><div class="tile__scroll" tabindex="0" aria-label="Mid-fi, scroll inside"><img src="img/wa/mob-mid.jpg" alt="WAEC result checker, mobile web: Mid-fi" loading="lazy" width="1170"></div><figcaption>Mid-fi · <span>scroll inside</span></figcaption></figure></div></div><div class="flow" data-reveal><div class="flow__head"><h3>Before · the current site</h3><span class="label">1 screen</span></div><div class="srow srow--d" data-drag><figure class="tile tile--d"><div class="tile__win"><img src="img/wa/before.jpg" alt="WAEC result checker: waecdirect.org today" loading="lazy"></div><figcaption>waecdirect.org today</figcaption></figure></div></div>
+      </section>
+      <section class="sec" id="key-screens" data-only="quick">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">08 · Final screens</p><h2>One screen, desktop and mobile web.</h2></div><div class="sec__text"><p>The final screen on desktop and phone. The full story has the mid-fi and the before.</p></div></div><div class="flow" data-reveal><div class="flow__head"><h3>Desktop</h3><span class="label">1 screen</span></div><div class="srow srow--d" data-drag><figure class="tile tile--d is-long"><div class="tile__win"><div class="tile__scroll" tabindex="0" aria-label="Final · hi-fi, scroll inside"><img src="img/wa/desk-hifi.jpg" alt="WAEC result checker: Final · hi-fi" loading="lazy"></div></div><figcaption>Final · hi-fi · <span>scroll inside</span></figcaption></figure></div></div><div class="flow" data-reveal><div class="flow__head"><h3>Mobile web</h3><span class="label">1 screen</span></div><div class="srow srow--m" data-drag><figure class="tile tile--m is-long"><div class="tile__scroll" tabindex="0" aria-label="Final · hi-fi, scroll inside"><img src="img/wa/mob-hifi.jpg" alt="WAEC result checker, mobile web: Final · hi-fi" loading="lazy" width="1170"></div><figcaption>Final · hi-fi · <span>scroll inside</span></figcaption></figure></div></div><div class="more" data-reveal><p class="label">Full story</p><h2>Want the whole story?</h2><p>The research behind it, the process, every screen and what I learned.</p><div class="more__links"><button type="button" class="btn btn--secondary" data-mode="full" data-go="problem">Read the full story <span class="arrow">→</span></button></div></div>
+      </section>
+      <section class="sec" id="learned" data-only="full">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">09 · What I learned</p><h2>What this project taught me.</h2></div></div><div class="cards cards--4" data-reveal><div class="card"><h3 style="font-size:19px">Small text, big impact</h3><p style="font-size:15px;color:var(--ink-soft)">Most of this redesign is one line of guidance under each box.</p></div><div class="card"><h3 style="font-size:19px">Respect what people know</h3><p style="font-size:15px;color:var(--ink-soft)">Keeping the familiar layout makes the changes feel like help, not a new system.</p></div><div class="card"><h3 style="font-size:19px">Guidance beats new features</h3><p style="font-size:15px;color:var(--ink-soft)">No new flow was needed. Clear help on the same screen did the work.</p></div><div class="card"><h3 style="font-size:19px">What I’d test next</h3><p style="font-size:15px;color:var(--ink-soft)">Whether students fill all 5 boxes right the first time, and whether the card guide cuts wasted checks.</p></div></div>
+      </section>
+    </div>
+
+    <section class="next" data-reveal>
+      <p class="label">Next project</p>
+      <div class="next__row">
+        <a class="next__img" href="refund.html" data-cursor="Next" aria-label="Refund tracker case study" style="background:var(--p-ref)"><img src="img/next-ref.jpg" alt="Refund tracker: transaction details and lock screen" loading="lazy" width="2184" height="1260"></a>
+        <div class="next__text"><h2>Refund tracker</h2><p class="tags">Mobile app · Feature redesign</p><p>Where’s my money? Answered before you ask.</p><a class="text-link" href="refund.html">Read case study <span class="arrow">→</span></a></div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="wrap foot" id="contact">
+    <section class="cta on-dark" data-reveal>
+      <div class="cta__left">
+        <p class="cta__eyebrow"><i></i>OPEN TO WORK · REMOTE</p>
+        <h2>Let’s work together.</h2>
+        <p>I’m open to remote product design roles, freelance projects and collaborations. Feel free to reach out.</p>
+        <div class="cta__btns">
+          <a class="btn btn--primary" href="mailto:sulaimontoheeb400@gmail.com">Email me</a>
+          <a class="btn btn--secondary" href="https://docs.google.com/document/d/1FTQwIDMbJTH2n3hDwcGk9VsAi0eCIkIrzyoSCxBQKmU/export?format=pdf" target="_blank" rel="noopener">Download CV <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M6 2.5v7M3 6.5l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+      <div class="cta__right">
+        <p class="cta__eyebrow" style="letter-spacing:.1em">GET IN TOUCH</p>
+        <a class="cta__email" href="mailto:sulaimontoheeb400@gmail.com">sulaimontoheeb400@gmail.com</a>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/sulaimon-toheeb" target="_blank" rel="noopener">LinkedIn <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="https://www.behance.net/Sulaimon_Toheeb" target="_blank" rel="noopener">Behance <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="https://x.com/Toheeb_design" target="_blank" rel="noopener">X <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+    </section>
+    <div class="foot__bottom"><span>© 2026 Toheeb</span><span>Lagos, Nigeria · Open to remote work</span></div>
+  </footer>
+</main>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <div class="menu__top"><a class="logo" href="index.html">TOHEEB</a><button class="menu__close" id="menuClose">Close ✕</button></div>
+  <nav class="menu__links">
+    <a href="work.html"><small>01</small>Work</a>
+    <a href="about.html"><small>02</small>About</a>
+    <a href="https://docs.google.com/document/d/1FTQwIDMbJTH2n3hDwcGk9VsAi0eCIkIrzyoSCxBQKmU/export?format=pdf" target="_blank" rel="noopener"><small>03</small>Download CV</a>
+    <a href="contact.html"><small>04</small>Contact</a>
+  </nav>
+  <div class="menu__foot">
+    <p class="cta__eyebrow"><i></i>OPEN TO WORK · REMOTE · LAGOS</p>
+    <a class="menu__email" href="mailto:sulaimontoheeb400@gmail.com">sulaimontoheeb400@gmail.com <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <div class="menu__social">
+      <a href="https://www.linkedin.com/in/sulaimon-toheeb" target="_blank" rel="noopener">LinkedIn <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="https://www.behance.net/Sulaimon_Toheeb" target="_blank" rel="noopener">Behance <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="https://x.com/Toheeb_design" target="_blank" rel="noopener">X <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<script src="js/site.js"></script>
+<script src="js/case.js"></script>
+<script src="js/cursor.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Refund tracker · Toheeb</title>
+<meta name="description" content="Case study: a failed-transfer tracker that tells you your money is safe before you ask.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Refund tracker · Toheeb">
+<meta property="og:description" content="Case study: a failed-transfer tracker that tells you your money is safe before you ask.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#F3F2EF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@1&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/viewer.css">
+<link rel="stylesheet" href="css/case.css">
+<style>:root { --proj: var(--p-ref); --tint: var(--t-ref); }</style>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="index.html">TOHEEB</a>
+    <nav class="nav" aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="https://docs.google.com/document/d/1FTQwIDMbJTH2n3hDwcGk9VsAi0eCIkIrzyoSCxBQKmU/view" target="_blank" rel="noopener">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menuOpen" aria-label="Open menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+  </div>
+</header>
+
+<main>
+  <section class="wrap cs-hero">
+    <a class="back" href="work.html"><span class="arrow">←</span> All work</a>
+    <div class="cs-top">
+      <div class="cs-intro">
+        <div class="mode" role="group" aria-label="Reading mode"><button type="button" data-mode="quick" aria-pressed="false">Quick read</button><button type="button" data-mode="full" aria-pressed="true">Full story</button></div>
+        <p class="label">06 / 07 · Mobile app · Fintech · Concept feature</p>
+        <h1 class="cs-title">Refund tracker</h1>
+        <p class="cs-sub">Where’s my money?</p>
+        <p class="cs-lead">A failed-transfer tracker inside a bank app. It answers the question before you have to ask it: is my money safe, when is it back, and should I resend?</p>
+        <p class="for"><span class="label">For</span><span>Bank app users waiting on a failed transfer</span></p>
+      </div>
+      <aside class="short">
+        <p class="label">The short version</p>
+        <dl>
+          <div><dt>Problem</dt><dd>When a transfer fails, the balance drops and nothing says if or when the money will come back. People resend and risk a double debit, or call and wait.</dd></div>
+          <div><dt>What I did</dt><dd>Looked at complaint data, news reports and a short survey, explored 3 Home directions, then designed the refund journey from lock screen to report, with both endings.</dd></div>
+          <div><dt>Outcome</dt><dd>A 7-step flow · status in 4 places · report in 3 taps with 0 forms. Concept, not yet tested, and not affiliated with any bank.</dd></div>
+        </dl>
+      </aside>
+    </div>
+    <div class="ppanel"><div class="srow srow--panel" data-drag><figure class="tile tile--m"><img src="img/rf/lock.jpg" alt="Refund tracker: Lock screen" loading="lazy" width="1170" height="2532"><figcaption>Lock screen</figcaption></figure><figure class="tile tile--m"><img src="img/rf/refunding.jpg" alt="Refund tracker: Refunding" loading="lazy" width="1170" height="2532"><figcaption>Refunding</figcaption></figure><figure class="tile tile--m"><img src="img/rf/refunded.jpg" alt="Refund tracker: Refunded" loading="lazy" width="1170" height="2532"><figcaption>Refunded</figcaption></figure></div></div>
+    <div class="facts"><div><span class="label">Role</span><span>Product designer</span></div><div><span class="label">Team</span><span>Solo</span></div><div><span class="label">Type</span><span>Concept feature</span></div><div><span class="label">Platform</span><span>iOS banking app</span></div><div><span class="label">Tools</span><span>Figma</span></div></div>
+  </section>
+
+  <div class="wrap cs-body">
+    <nav class="chapters" aria-label="On this page"><span class="label">On this page</span><a href="#problem">The problem</a><a href="#matters">Why it matters</a><a href="#decisions">Key decisions</a><a href="#endings">Two endings</a><a href="#visual">Visual design</a><a href="#process" data-only="full">Process</a><a href="#screens" data-only="full">Final screens</a><a href="#key-screens" data-only="quick">Final screens</a><a href="#learned" data-only="full">What I learned</a></nav>
+    <div class="sections">
+      <section class="sec" id="problem">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">01 · The problem</p><h2>The balance drops. Then nothing.</h2></div><div class="sec__text" data-only="full"><p>A transfer of mine failed, and I had no idea if or when the money would come back. Customers describe the same thing: often the only sign is the balance drop. There’s no timeline, no warning not to resend, and reporting it means calls and follow-ups.</p></div></div><div class="callout" data-reveal><p class="label">How might we</p><p>Tell people their money is safe before they panic, show when it will be back, and make reporting easy only if it’s late?</p></div>
+      </section>
+      <section class="sec" id="matters">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">02 · Why it matters</p><h2>I’ve been there. So have a lot of people.</h2></div><div class="sec__text" data-only="full"><p>This started with my own failed transfer. Then I looked at how common it is, using public reports rather than interviews.</p></div></div><div class="cards cards--3" data-reveal><div class="card stat"><b>60%+</b><p>of 2024–25 bank complaints in one social-media analysis were about failed or delayed transactions</p><span class="label">Moneycentral, 2025</span></div><div class="card stat"><b>Top</b><p>complaint: delays in resolving failed transactions are among those the regulator receives most</p><span class="label">FCCPC, Oct 2025</span></div><div class="card stat"><b>Auto</b><p>reversals for failed ATM transactions, without waiting for a complaint, in the CBN’s draft rules</p><span class="label">CBN draft rules, Oct 2025</span></div></div><div class="cards cards--3" data-reveal data-only="full"><div class="insight"><span class="label">Insight 01</span><h3>Silence causes panic</h3><p>Not knowing is worse than waiting.</p></div><div class="insight"><span class="label">Insight 02</span><h3>Resending is risky</h3><p>Retrying a failed transfer can debit you twice.</p></div><div class="insight"><span class="label">Insight 03</span><h3>Reporting is a chore</h3><p>“They kept telling me to call back.” A taxi driver, Daily Trust, 2023.</p></div></div><p class="note" data-only="full">Based on public reports, my own experience and a short survey.</p>
+      </section>
+      <section class="sec decisions decisions--phone" id="decisions">
+        <div class="dec-track"><div class="dec-pin">
+          <div class="dec-head"><div class="sec__title"><p class="label">03 · Key decisions</p><h2>Three choices that answer before you ask.</h2></div><div class="dec-steps" aria-hidden="true"><button type="button" class="dec-step is-active" data-step="0" tabindex="-1"><span class="dec-step__n">01</span><span class="dec-step__t">Silence causes panic</span><i><b></b></i></button><button type="button" class="dec-step" data-step="1" tabindex="-1"><span class="dec-step__n">02</span><span class="dec-step__t">Where it lives</span><i><b></b></i></button><button type="button" class="dec-step" data-step="2" tabindex="-1"><span class="dec-step__n">03</span><span class="dec-step__t">Resending is risky</span><i><b></b></i></button></div></div>
+          <div class="dec-stage">
+            <article class="decision is-active" data-i="0"><div class="figure"><img src="img/rf/dec-1.jpg" alt="Lock screen with a live refund countdown and a bank notification" loading="lazy"></div><div class="decision__text"><span class="decision__num">01</span><h3>Tell them first</h3><p>The news arrives on the lock screen with a live countdown, before panic sets in. The same status also shows on Home, in history and in the transfer details.</p><span class="answers" data-only="full">Answers: silence causes panic</span></div></article>
+            <article class="decision" data-i="1"><div class="figure"><img src="img/rf/dec-2.jpg" alt="Home with a smart tile showing money returning" loading="lazy"></div><div class="decision__text"><span class="decision__num">02</span><h3>One smart tile on Home</h3><p>I explored 3 Home directions. In the chosen one, a single tile shows the most useful thing right now: a problem beats a bill that’s due, which beats Send again.</p><span class="answers" data-only="full">Answers: where it lives</span></div></article>
+            <article class="decision" data-i="2"><div class="figure"><img src="img/rf/dec-3.jpg" alt="Transaction details with the refund timeline and a do-not-resend warning" loading="lazy"></div><div class="decision__text"><span class="decision__num">03</span><h3>“Don’t resend yet”</h3><p>A clear timeline (Debited → Failed → Refunding) plus a warning not to resend until the money is back, because retrying can debit you twice.</p><span class="answers" data-only="full">Answers: resending is risky</span></div></article>
+          </div>
+        </div></div>
+      </section>
+      <section class="sec" id="endings">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">04 · Two endings</p><h2>Back by 18:10, or report in 3 taps.</h2></div><div class="sec__text"><p>At 18:08 the money is back: the tracker turns green and Send again is safe. If it’s still not back at 18:10, Report unlocks on its own. Details attach automatically, and you get a case number with what happens next. If the network can’t give a time, the countdown is replaced by the bank’s published reversal window. No fake timers.</p></div></div><div class="ppanel" data-reveal><div class="srow srow--panel" data-drag><figure class="tile tile--m"><img src="img/rf/refunded.jpg" alt="Refund tracker: On time: refunded" loading="lazy" width="1170" height="2532"><figcaption>On time: refunded</figcaption></figure><figure class="tile tile--m"><img src="img/rf/overdue.jpg" alt="Refund tracker: Late: overdue" loading="lazy" width="1170" height="2532"><figcaption>Late: overdue</figcaption></figure><figure class="tile tile--m"><img src="img/rf/report.jpg" alt="Refund tracker: Report it" loading="lazy" width="1170" height="2532"><figcaption>Report it</figcaption></figure><figure class="tile tile--m"><img src="img/rf/report-sent.jpg" alt="Refund tracker: Report sent" loading="lazy" width="1170" height="2532"><figcaption>Report sent</figcaption></figure></div></div>
+      </section>
+      <section class="sec" id="visual">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">05 · Visual design</p><h2>Calm colours for a stressful moment.</h2></div><div class="sec__text" data-only="full"><p>Every colour has one job, so status reads at a glance: amber means it’s coming, clay means act, sage means it’s done. Pine and cream keep the rest of the screen quiet.</p></div></div><div class="swatches" data-reveal><div><i style="background:#10231E"></i>Pine · text<span>#10231E</span></div><div><i style="background:#E3A23B"></i>Amber<span>#E3A23B</span></div><div><i style="background:#C4572E"></i>Clay<span>#C4572E</span></div><div><i style="background:#4F7F5C"></i>Sage<span>#4F7F5C</span></div><div><i style="background:#F4F1EA;box-shadow:inset 0 0 0 1px var(--line)"></i>Cream<span>#F4F1EA</span></div></div><div class="typecards" data-reveal><div class="card"><b style="font-family:Montserrat,var(--f-sans)">Aa</b><span style="font-size:18px">Montserrat</span><span style="font-size:15px;color:var(--ink-soft)">Amounts and titles.</span></div><div class="card"><b style="font-family:'Open Sans',var(--f-sans)">Aa</b><span style="font-size:18px">Open Sans</span><span style="font-size:15px;color:var(--ink-soft)">Body, labels and status chips.</span></div></div><p class="label">Components · from the mini style guide · slide for more →</p><div class="srow srow--comp" data-drag data-reveal><figure class="tile tile--c"><img src="img/rf/comp-1.jpg" alt="Lock screen live activity and notification" loading="lazy"></figure><figure class="tile tile--c"><img src="img/rf/comp-2.jpg" alt="Refund status tracker" loading="lazy"></figure><figure class="tile tile--c"><img src="img/rf/comp-3.jpg" alt="Transaction row, failed, with refund progress" loading="lazy"></figure><figure class="tile tile--c"><img src="img/rf/comp-4.jpg" alt="Buttons: share receipt, report, send again, send report" loading="lazy"></figure><figure class="tile tile--c"><img src="img/rf/comp-5.jpg" alt="Home widget: money returning" loading="lazy"></figure></div>
+      </section>
+      <section class="sec" id="process" data-only="full">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">06 · Process</p><h2>From a separate tracker to the screens people already use.</h2></div></div><div class="cards cards--3" data-reveal data-only="full"><div class="card"><span class="label">Step 01</span><h3 style="font-size:18px">Map the journey</h3><p style="font-size:15px;color:var(--ink-soft)">From failed transfer to refunded or reported, with the late path only appearing when needed.</p></div><div class="card"><span class="label">Step 02</span><h3 style="font-size:18px">Two mid-fi rounds</h3><p style="font-size:15px;color:var(--ink-soft)">First a separate tracker, then “track it like a delivery” with a timeline.</p></div><div class="card"><span class="label">Step 03</span><h3 style="font-size:18px">Hi-fi, where people look</h3><p style="font-size:15px;color:var(--ink-soft)">Moved the status into the lock screen, Home and history, then compared 3 Home directions.</p></div></div><div class="flow" data-reveal><div class="flow__head"><h3>Mid-fi · the whole journey in greyscale</h3><span class="label">10 screens · slide for more →</span></div><div class="srow srow--m" data-drag><figure class="tile tile--m"><img src="img/rf/mid/m01.jpg" alt="Refund tracker mid-fi, greyscale: History · failed row" loading="lazy" width="644" height="1394"><figcaption>History · failed row</figcaption></figure><figure class="tile tile--m"><img src="img/rf/mid/m02.jpg" alt="Refund tracker mid-fi, greyscale: Details · refunding" loading="lazy" width="644" height="1394"><figcaption>Details · refunding</figcaption></figure><figure class="tile tile--m"><img src="img/rf/mid/m03.jpg" alt="Refund tracker mid-fi, greyscale: Details · refunded" loading="lazy" width="644" height="1394"><figcaption>Details · refunded</figcaption></figure><figure class="tile tile--m"><img src="img/rf/mid/m04.jpg" alt="Refund tracker mid-fi, greyscale: Lock screen" loading="lazy" width="644" height="1394"><figcaption>Lock screen</figcaption></figure><figure class="tile tile--m"><img src="img/rf/mid/m05.jpg" alt="Refund tracker mid-fi, greyscale: Details · overdue" loading="lazy" width="644" height="1394"><figcaption>Details · overdue</figcaption></figure><figure class="tile tile--m"><img src="img/rf/mid/m06.jpg" alt="Refund tracker mid-fi, greyscale: Report this transfer" loading="lazy" width="644" height="1394"><figcaption>Report this transfer</figcaption></figure><figure class="tile tile--m"><img src="img/rf/mid/m07.jpg" alt="Refund tracker mid-fi, greyscale: Report sent" loading="lazy" width="644" height="1394"><figcaption>Report sent</figcaption></figure><figure class="tile tile--m"><img src="img/rf/mid/m08.jpg" alt="Refund tracker mid-fi, greyscale: Home · send again" loading="lazy" width="644" height="1394"><figcaption>Home · send again</figcaption></figure><figure class="tile tile--m"><img src="img/rf/mid/m09.jpg" alt="Refund tracker mid-fi, greyscale: Home · bill due" loading="lazy" width="644" height="1394"><figcaption>Home · bill due</figcaption></figure><figure class="tile tile--m"><img src="img/rf/mid/m10.jpg" alt="Refund tracker mid-fi, greyscale: Home · refunded" loading="lazy" width="644" height="1394"><figcaption>Home · refunded</figcaption></figure></div></div>
+      </section>
+      <section class="sec" id="screens" data-only="full">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">07 · Final screens</p><h2>Seven steps, from failed to fixed.</h2></div><div class="sec__text"><p>All 13 screens at full size, grouped by flow. Each row scrolls sideways.</p></div></div><div class="flow" data-reveal><div class="flow__head"><h3>Notice it</h3><span class="label">3 screens · slide for more →</span></div><div class="srow srow--m" data-drag><figure class="tile tile--m"><img src="img/rf/lock.jpg" alt="Refund tracker: Lock screen · live refund" loading="lazy" width="1170" height="2532"><figcaption>Lock screen · live refund</figcaption></figure><figure class="tile tile--m"><img src="img/rf/tx-failed.jpg" alt="Refund tracker: Transactions · failed row" loading="lazy" width="1170" height="2532"><figcaption>Transactions · failed row</figcaption></figure><figure class="tile tile--m"><img src="img/rf/refunding.jpg" alt="Refund tracker: Details · refunding" loading="lazy" width="1170" height="2532"><figcaption>Details · refunding</figcaption></figure></div></div><div class="flow" data-reveal><div class="flow__head"><h3>Track it</h3><span class="label">3 screens · slide for more →</span></div><div class="srow srow--m" data-drag><figure class="tile tile--m"><img src="img/rf/refunded.jpg" alt="Refund tracker: Details · refunded" loading="lazy" width="1170" height="2532"><figcaption>Details · refunded</figcaption></figure><figure class="tile tile--m"><img src="img/rf/home-complete.jpg" alt="Refund tracker: Home · refund complete" loading="lazy" width="1170" height="2532"><figcaption>Home · refund complete</figcaption></figure><figure class="tile tile--m"><img src="img/rf/home-normal.jpg" alt="Refund tracker: Home · normal day" loading="lazy" width="1170" height="2532"><figcaption>Home · normal day</figcaption></figure></div></div><div class="flow" data-reveal><div class="flow__head"><h3>Report it, only if late</h3><span class="label">3 screens · slide for more →</span></div><div class="srow srow--m" data-drag><figure class="tile tile--m"><img src="img/rf/overdue.jpg" alt="Refund tracker: Details · overdue" loading="lazy" width="1170" height="2532"><figcaption>Details · overdue</figcaption></figure><figure class="tile tile--m"><img src="img/rf/report.jpg" alt="Refund tracker: Pick what happened" loading="lazy" width="1170" height="2532"><figcaption>Pick what happened</figcaption></figure><figure class="tile tile--m"><img src="img/rf/report-sent.jpg" alt="Refund tracker: Report sent · case number" loading="lazy" width="1170" height="2532"><figcaption>Report sent · case number</figcaption></figure></div></div><div class="flow" data-reveal><div class="flow__head"><h3>Home: three directions</h3><span class="label">4 screens · slide for more →</span></div><div class="srow srow--m" data-drag><figure class="tile tile--m"><img src="img/rf/home-a.jpg" alt="Refund tracker: A · Classic balance card" loading="lazy" width="1170" height="2532"><figcaption>A · Classic balance card</figcaption></figure><figure class="tile tile--m"><img src="img/rf/home-b.jpg" alt="Refund tracker: B · Split balance header" loading="lazy" width="1170" height="2532"><figcaption>B · Split balance header</figcaption></figure><figure class="tile tile--m"><img src="img/rf/home-c.jpg" alt="Refund tracker: C · Bento widgets (chosen)" loading="lazy" width="1170" height="2532"><figcaption>C · Bento widgets (chosen)</figcaption></figure><figure class="tile tile--m"><img src="img/rf/home-c-default.jpg" alt="Refund tracker: C · Default, Send again" loading="lazy" width="1170" height="2532"><figcaption>C · Default, Send again</figcaption></figure></div></div>
+      </section>
+      <section class="sec" id="key-screens" data-only="quick">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">07 · Final screens</p><h2>Seven steps, from failed to fixed.</h2></div><div class="sec__text"><p>The key moments at full size. The full story has all 13 screens and the 3 Home directions.</p></div></div><div class="flow" data-reveal><div class="flow__head"><h3>Key screens</h3><span class="label">5 screens · slide for more →</span></div><div class="srow srow--m" data-drag><figure class="tile tile--m"><img src="img/rf/lock.jpg" alt="Refund tracker: Lock screen · live refund" loading="lazy" width="1170" height="2532"><figcaption>Lock screen · live refund</figcaption></figure><figure class="tile tile--m"><img src="img/rf/home-c.jpg" alt="Refund tracker: Home · smart tile" loading="lazy" width="1170" height="2532"><figcaption>Home · smart tile</figcaption></figure><figure class="tile tile--m"><img src="img/rf/refunding.jpg" alt="Refund tracker: Details · refunding" loading="lazy" width="1170" height="2532"><figcaption>Details · refunding</figcaption></figure><figure class="tile tile--m"><img src="img/rf/refunded.jpg" alt="Refund tracker: Details · refunded" loading="lazy" width="1170" height="2532"><figcaption>Details · refunded</figcaption></figure><figure class="tile tile--m"><img src="img/rf/report-sent.jpg" alt="Refund tracker: Report sent" loading="lazy" width="1170" height="2532"><figcaption>Report sent</figcaption></figure></div></div><div class="more" data-reveal><p class="label">Full story</p><h2>Want the whole story?</h2><p>The research behind it, the process, every screen and what I learned.</p><div class="more__links"><button type="button" class="btn btn--secondary" data-mode="full" data-go="problem">Read the full story <span class="arrow">→</span></button></div></div>
+      </section>
+      <section class="sec" id="learned" data-only="full">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">08 · What I learned</p><h2>What this project taught me.</h2></div></div><div class="cards cards--4" data-reveal><div class="card"><h3 style="font-size:19px">Fix it where people look</h3><p style="font-size:15px;color:var(--ink-soft)">Putting the status on the lock screen, Home and history beat building a new screen.</p></div><div class="card"><h3 style="font-size:19px">Timing is the feature</h3><p style="font-size:15px;color:var(--ink-soft)">The same information helps more when it arrives before people go looking.</p></div><div class="card"><h3 style="font-size:19px">No fake timers</h3><p style="font-size:15px;color:var(--ink-soft)">When there’s no reliable time, honesty beats a countdown.</p></div><div class="card"><h3 style="font-size:19px">What I’d test next</h3><p style="font-size:15px;color:var(--ink-soft)">5 people who’ve had a failed transfer: can 4 of 5 say when the money is back and whether to resend?</p></div></div>
+      </section>
+    </div>
+
+    <section class="next" data-reveal>
+      <p class="label">Next project</p>
+      <div class="next__row">
+        <a class="next__img" href="jiji.html" data-cursor="Next" aria-label="Jiji search case study" style="background:var(--p-jiji)"><img src="img/next-jiji.jpg" alt="Jiji search redesign on desktop and phone" loading="lazy" width="2184" height="1260"></a>
+        <div class="next__text"><h2>Jiji search</h2><p class="tags">Mobile + web · Unsolicited concept</p><p>Show more, process less.</p><a class="text-link" href="jiji.html">Read case study <span class="arrow">→</span></a></div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="wrap foot" id="contact">
+    <section class="cta on-dark" data-reveal>
+      <div class="cta__left">
+        <p class="cta__eyebrow"><i></i>OPEN TO WORK · REMOTE</p>
+        <h2>Let’s work together.</h2>
+        <p>I’m open to remote product design roles, freelance projects and collaborations. Feel free to reach out.</p>
+        <div class="cta__btns">
+          <a class="btn btn--primary" href="mailto:sulaimontoheeb400@gmail.com">Email me</a>
+          <a class="btn btn--secondary" href="https://docs.google.com/document/d/1FTQwIDMbJTH2n3hDwcGk9VsAi0eCIkIrzyoSCxBQKmU/export?format=pdf" target="_blank" rel="noopener">Download CV <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M6 2.5v7M3 6.5l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+      <div class="cta__right">
+        <p class="cta__eyebrow" style="letter-spacing:.1em">GET IN TOUCH</p>
+        <a class="cta__email" href="mailto:sulaimontoheeb400@gmail.com">sulaimontoheeb400@gmail.com</a>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/sulaimon-toheeb" target="_blank" rel="noopener">LinkedIn <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="https://www.behance.net/Sulaimon_Toheeb" target="_blank" rel="noopener">Behance <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="https://x.com/Toheeb_design" target="_blank" rel="noopener">X <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+    </section>
+    <div class="foot__bottom"><span>© 2026 Toheeb</span><span>Lagos, Nigeria · Open to remote work</span></div>
+  </footer>
+</main>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <div class="menu__top"><a class="logo" href="index.html">TOHEEB</a><button class="menu__close" id="menuClose">Close ✕</button></div>
+  <nav class="menu__links">
+    <a href="work.html"><small>01</small>Work</a>
+    <a href="about.html"><small>02</small>About</a>
+    <a href="https://docs.google.com/document/d/1FTQwIDMbJTH2n3hDwcGk9VsAi0eCIkIrzyoSCxBQKmU/export?format=pdf" target="_blank" rel="noopener"><small>03</small>Download CV</a>
+    <a href="contact.html"><small>04</small>Contact</a>
+  </nav>
+  <div class="menu__foot">
+    <p class="cta__eyebrow"><i></i>OPEN TO WORK · REMOTE · LAGOS</p>
+    <a class="menu__email" href="mailto:sulaimontoheeb400@gmail.com">sulaimontoheeb400@gmail.com <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <div class="menu__social">
+      <a href="https://www.linkedin.com/in/sulaimon-toheeb" target="_blank" rel="noopener">LinkedIn <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="https://www.behance.net/Sulaimon_Toheeb" target="_blank" rel="noopener">Behance <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="https://x.com/Toheeb_design" target="_blank" rel="noopener">X <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<script src="js/site.js"></script>
+<script src="js/case.js"></script>
+<script src="js/cursor.js"></script>
+</body>
+</html>

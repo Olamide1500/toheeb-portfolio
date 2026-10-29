@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Attendance · Toheeb</title>
+<meta name="description" content="Case study: a one-click attendance tool born from a real problem at my workspace.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Attendance · Toheeb">
+<meta property="og:description" content="Case study: a one-click attendance tool born from a real problem at my workspace.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#F3F2EF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@1&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&family=Montserrat:wght@700&family=Open+Sans:wght@700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/viewer.css">
+<link rel="stylesheet" href="css/case.css">
+<style>:root { --proj: var(--p-att); --tint: var(--t-att); }</style>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="index.html">TOHEEB</a>
+    <nav class="nav" aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="https://docs.google.com/document/d/1FTQwIDMbJTH2n3hDwcGk9VsAi0eCIkIrzyoSCxBQKmU/view" target="_blank" rel="noopener">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menuOpen" aria-label="Open menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+  </div>
+</header>
+
+<main>
+  <section class="wrap cs-hero">
+    <a class="back" href="work.html"><span class="arrow">←</span> All work</a>
+    <div class="cs-top">
+      <div class="cs-intro">
+        <div class="mode" role="group" aria-label="Reading mode"><button type="button" data-mode="quick" aria-pressed="false">Quick read</button><button type="button" data-mode="full" aria-pressed="true">Full story</button></div>
+        <p class="label">01 / 07 · Web app · Attendance · Real problem</p>
+        <h1 class="cs-title">Attendance</h1>
+        <p class="cs-sub">Check in, check out, done.</p>
+        <p class="cs-lead">A simple check-in tool that any team can use without a manual. Team members check in and out, and managers see who’s in without asking around.</p>
+        <p class="for"><span class="label">For</span><span>Teams in shared workspaces, their managers and company owners</span></p>
+      </div>
+      <aside class="short">
+        <p class="label">The short version</p>
+        <dl>
+          <div><dt>Problem</dt><dd>My team had an attendance tool, but it was unclear and stressful to use, so everyone went back to a paper checklist.</dd></div>
+          <div><dt>What I did</dt><dd>Designed it end to end: user flows, wireframes, a design system, high-fidelity UI for desktop and mobile web, and a clickable prototype.</dd></div>
+          <div><dt>Outcome</dt><dd>39 desktop screens · 10 mobile web screens · a fully connected prototype, with edge cases like failed check-ins and expired invites covered.</dd></div>
+        </dl>
+      </aside>
+    </div>
+    <figure class="figure" style="margin:0"><img src="img/att-hero.jpg" alt="Attendance dashboard after checking in" width="1860" height="1350"></figure>
+    <div class="facts">
+      <div><span class="label">Role</span><span>Product designer</span></div>
+      <div><span class="label">Team</span><span>Solo</span></div>
+      <div><span class="label">Timeline</span><span>1 week</span></div>
+      <div><span class="label">Platform</span><span>Web · desktop + mobile</span></div>
+      <div><span class="label">Tools</span><span>Figma</span></div>
+      <div><span class="label">Screens</span><span>49 · <a href="#screens" data-open-screens>See all →</a></span></div>
+    </div>
+  </section>
+
+  <div class="wrap cs-body">
+    <nav class="chapters" aria-label="On this page">
+      <span class="label">On this page</span>
+      <a href="#problem">The problem</a><a href="#started">Where it started</a><a href="#decisions">Key decisions</a><a href="#calendar">The calendar</a><a href="#visual">Visual design</a><a href="#process" data-only="full">Process</a><a href="#screens" data-only="full">Final screens</a><a href="#learned" data-only="full">What I learned</a><a href="#key-screens" data-only="quick">Final screens</a><a href="#screens" data-only="quick" data-open-screens>All 49 screens</a>
+    </nav>
+
+    <div class="sections">
+      <section class="sec" id="problem">
+        <div class="sec__intro" data-reveal>
+          <div class="sec__title"><p class="label">01 · The problem</p><h2>Every day, the same three questions.</h2></div>
+          <div class="sec__text" data-only="full"><p>In my workspace, the creative director walked from desk to desk asking: “When did you get in?”, “Have you marked attendance?” and “Are you done for today?”. There was an attendance tool, but it was unclear and stressful to use, so the team went back to a paper checklist.</p></div>
+        </div>
+        <div class="callout" data-reveal><p class="label">How might we</p><p>Make checking in so quick and clear that people actually use it, and managers can see who’s in without asking around?</p></div>
+      </section>
+
+      <section class="sec" id="started">
+        <div class="sec__intro" data-reveal>
+          <div class="sec__title"><p class="label">02 · Where it started</p><h2>The tool wasn’t long. It just wasn’t clear.</h2></div>
+          <div class="sec__text" data-only="full"><p>I didn’t run formal interviews. This came from watching how my own team handled attendance every day.</p></div>
+        </div>
+        <div class="cards cards--3" data-reveal>
+          <div class="card stat"><b>3</b><p>questions the creative director asked, desk to desk, every day</p><span class="label">My workspace</span></div>
+          <div class="card stat"><b>Paper</b><p>is what the team went back to, because the tool was stressful</p><span class="label">My workspace</span></div>
+          <div class="card stat"><b>1 click</b><p>is the goal: check in and out in a few seconds</p><span class="label">Project goal</span></div>
+        </div>
+        <div class="cards cards--3" data-reveal data-only="full">
+          <div class="insight"><span class="label">Insight 01</span><h3>Clear beats short</h3><p>The old tool didn’t have many steps. People needed obvious ones.</p></div>
+          <div class="insight"><span class="label">Insight 02</span><h3>Managers need answers</h3><p>Who’s in today should be visible without walking around asking.</p></div>
+          <div class="insight"><span class="label">Insight 03</span><h3>Mistakes happen</h3><p>A wrong click or a dropped network shouldn’t need a message to the manager.</p></div>
+        </div>
+        <p class="note" data-only="full">Observed in one workspace, so I treat it as a starting point rather than proof for every team.</p>
+      </section>
+
+      <section class="sec decisions" id="decisions">
+        <div class="dec-track">
+          <div class="dec-pin">
+            <div class="dec-head">
+              <div class="sec__title"><p class="label">03 · Key decisions</p><h2>Three choices that kept it simple.</h2></div>
+              <div class="dec-steps" aria-hidden="true"><button type="button" class="dec-step is-active" data-step="0" tabindex="-1"><span class="dec-step__n">01</span><span class="dec-step__t">Clear beats short</span><i><b></b></i></button><button type="button" class="dec-step" data-step="1" tabindex="-1"><span class="dec-step__n">02</span><span class="dec-step__t">Mistakes happen</span><i><b></b></i></button><button type="button" class="dec-step" data-step="2" tabindex="-1"><span class="dec-step__n">03</span><span class="dec-step__t">You always know if it worked</span><i><b></b></i></button></div>
+            </div>
+            <div class="dec-stage">
+            <article class="decision is-active" data-i="0">
+          <div class="figure"><img src="img/att-dec-1.jpg" alt="Dashboard before checking in, with one large Check in button" loading="lazy" width="1621" height="1179"></div>
+          <div class="decision__text"><span class="decision__num">01</span><h3>One click to check in</h3><p>The main action is the biggest thing on the screen. No menus, no extra page. The button shows progress and ignores repeat clicks, so nobody checks in twice.</p><span class="answers" data-only="full">Answers: clear beats short</span></div>
+        </article>
+            <article class="decision" data-i="1">
+          <div class="figure"><img src="img/att-dec-2.jpg" alt="Dashboard after checking in, with an Undo option" loading="lazy" width="1621" height="1179"></div>
+          <div class="decision__text"><span class="decision__num">02</span><h3>Undo for 2 minutes</h3><p>People click by mistake. Instead of messaging a manager, they can undo it themselves. Undo replaces a confirm dialog, so the normal path stays one click.</p><span class="answers" data-only="full">Answers: mistakes happen</span></div>
+        </article>
+            <article class="decision" data-i="2">
+          <div class="figure"><img src="img/att-dec-3.jpg" alt="Dashboard showing a failed check-in with a Try again button" loading="lazy" width="1621" height="1179"></div>
+          <div class="decision__text"><span class="decision__num">03</span><h3>Failures are never silent</h3><p>If the network drops, the card says so and offers Try again. The status doesn’t change until the server confirms, so there’s never a false check-in.</p><span class="answers" data-only="full">Answers: you always know if it worked</span></div>
+        </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec" id="calendar">
+        <div class="sec__intro" data-reveal>
+          <div class="sec__title"><p class="label">04 · The hardest part</p><h2>A calendar that stays calm.</h2></div>
+          <div class="sec__text"><p>One month shows a lot at once: dates, weekends, check-ins, check-outs, absences, today and the days still to come. Weekends and future days are muted, each day shows one clear status, and clicking a day opens its exact times in a side panel. A list with date filters covers longer ranges.</p></div>
+        </div>
+        <figure class="figure" style="margin:0" data-reveal><img src="img/att-calendar.jpg" alt="History: day details panel, and the list with a date range" loading="lazy" width="1736" height="2475"></figure>
+      </section>
+
+      <section class="sec" id="visual">
+        <div class="sec__intro" data-reveal>
+          <div class="sec__title"><p class="label">05 · Visual design</p><h2>One brand colour, many shades.</h2></div>
+          <div class="sec__text"><p>Teal carries the brand: buttons, links, the sidebar and focus. Clay is a small accent, never used for actions. Each status pairs a light background with dark text from the same family, so it reads at a glance.</p></div>
+        </div>
+        <div class="swatches" data-reveal>
+          <div><i style="background:#1F4E5F"></i>Teal · primary<span>#1F4E5F</span></div>
+          <div><i style="background:#173B48"></i>Teal 800<span>#173B48</span></div>
+          <div><i style="background:#EEF4F6;box-shadow:inset 0 0 0 1px var(--line)"></i>Teal 50<span>#EEF4F6</span></div>
+          <div><i style="background:#E07B39"></i>Clay · accent<span>#E07B39</span></div>
+          <div><i style="background:#1A2328"></i>Neutral 900<span>#1A2328</span></div>
+        </div>
+        <div class="typecards" data-reveal>
+          <div class="card"><b style="font-family:Montserrat,var(--f-sans)">Aa</b><span style="font-size:18px">Montserrat</span><span style="font-size:15px;color:var(--ink-soft)">Headings.</span></div>
+          <div class="card"><b style="font-family:'Open Sans',var(--f-sans)">Aa</b><span style="font-size:18px">Open Sans</span><span style="font-size:15px;color:var(--ink-soft)">Body and UI text.</span></div>
+        </div>
+        <p class="label">Components · type styles, check-in button and statuses · slide for more →</p>
+        <div class="hscroll" data-drag data-reveal><img src="img/att-components.jpg" alt="Close-ups of the type styles, the check-in button and status chips" loading="lazy"></div>
+      </section>
+
+      <section class="sec" id="process" data-only="full">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">06 · Process</p><h2>Parts first, then screens, in one week.</h2></div></div>
+        <div class="cards cards--3" data-reveal>
+          <div class="card"><span class="label">Step 01</span><h3 style="font-size:18px">Map the flows</h3><p style="font-size:15px;color:var(--ink-soft)">Four journeys: the company owner, a new employee, the everyday team member and the manager.</p></div>
+          <div class="card"><span class="label">Step 02</span><h3 style="font-size:18px">Wireframes</h3><p style="font-size:15px;color:var(--ink-soft)">Every screen and state in greyscale first, each with a short note on why it works that way.</p></div>
+          <div class="card"><span class="label">Step 03</span><h3 style="font-size:18px">Design system, then UI</h3><p style="font-size:15px;color:var(--ink-soft)">Colours, type and components first, then 39 desktop screens and a mobile web version.</p></div>
+        </div>
+        <figure class="figure" style="margin:0" data-reveal><img src="img/att-wireframe.jpg" alt="The dashboard as a greyscale wireframe and as the final UI" loading="lazy" width="1736" height="2475"></figure>
+      </section>
+
+      <section class="sec" id="screens" data-only="full">
+        <div class="sec__intro" data-reveal>
+          <div class="sec__title"><p class="label">07 · Final screens</p><h2>All 49 screens, in one view.</h2></div>
+          <div class="sec__text"><p>6 flows: the website, sign-up, the employee and manager apps, and the mobile web version, with 6 edge cases. The main flows are also shown larger below.</p></div>
+        </div>
+        <figure class="figure wall" style="margin:0" data-reveal><a href="#screens" data-open-screens data-cursor="View" aria-label="Open all 49 screens"><img src="img/att-wall.jpg" alt="All 49 Attendance screens arranged by flow" loading="lazy" width="2480" height="2588"><span class="wall__cta">Open all 49 screens <span class="arrow">→</span></span></a></figure>
+        <p class="legend"><i></i>Edge case: an error, empty or expired screen</p>
+        <p class="label" style="margin-top:12px">Main flows · full size</p>
+        <div class="flow" data-reveal><div class="flow__head"><h3>Sign in and account</h3><span class="label">5 screens · slide for more →</span></div><div class="hscroll" data-drag><img src="img/att-flow-1.jpg" alt="Log in, wrong password, forgot password, link sent and profile screens" loading="lazy"></div></div>
+        <div class="flow" data-reveal><div class="flow__head"><h3>Dashboard</h3><span class="label">5 screens · slide for more →</span></div><div class="hscroll" data-drag><img src="img/att-flow-2.jpg" alt="Dashboard: not marked, checking in, checked in, checked out and failed" loading="lazy"></div></div>
+        <div class="flow" data-reveal><div class="flow__head"><h3>History</h3><span class="label">4 screens · slide for more →</span></div><div class="hscroll" data-drag><img src="img/att-flow-3.jpg" alt="History: month calendar, day details, list with date range and empty range" loading="lazy"></div></div>
+        <div class="flow" data-reveal><div class="flow__head"><h3>Team (manager)</h3><span class="label">8 screens · slide for more →</span></div><div class="hscroll" data-drag><img src="img/att-flow-4.jpg" alt="Manager team screens: today, filters, no results, past dates, one employee, add member, email in use, invite pending" loading="lazy"></div></div>
+        <div class="flow" data-reveal><div class="flow__head"><h3>Mobile web</h3><span class="label">10 screens · slide for more →</span></div><div class="srow srow--m" data-drag><figure class="tile tile--m"><img src="img/att-screens/s40.jpg" alt="Mobile web: Log in" loading="lazy" width="780" height="1688"><figcaption>Log in</figcaption></figure><figure class="tile tile--m"><img src="img/att-screens/s41.jpg" alt="Mobile web: Not marked" loading="lazy" width="780" height="1688"><figcaption>Not marked</figcaption></figure><figure class="tile tile--m"><img src="img/att-screens/s42.jpg" alt="Mobile web: Checked in" loading="lazy" width="780" height="1688"><figcaption>Checked in</figcaption></figure><figure class="tile tile--m"><img src="img/att-screens/s43.jpg" alt="Mobile web: Checked out" loading="lazy" width="780" height="1688"><figcaption>Checked out</figcaption></figure><figure class="tile tile--m"><img src="img/att-screens/s44.jpg" alt="Mobile web: History" loading="lazy" width="780" height="1688"><figcaption>History</figcaption></figure><figure class="tile tile--m"><img src="img/att-screens/s45.jpg" alt="Mobile web: Day details" loading="lazy" width="780" height="1688"><figcaption>Day details</figcaption></figure><figure class="tile tile--m"><img src="img/att-screens/s46.jpg" alt="Mobile web: Profile" loading="lazy" width="780" height="1688"><figcaption>Profile</figcaption></figure><figure class="tile tile--m"><img src="img/att-screens/s47.jpg" alt="Mobile web: Team today" loading="lazy" width="780" height="1688"><figcaption>Team today</figcaption></figure><figure class="tile tile--m"><img src="img/att-screens/s48.jpg" alt="Mobile web: Menu · team member" loading="lazy" width="780" height="1688"><figcaption>Menu · team member</figcaption></figure><figure class="tile tile--m"><img src="img/att-screens/s49.jpg" alt="Mobile web: Menu · manager" loading="lazy" width="780" height="1688"><figcaption>Menu · manager</figcaption></figure></div></div>
+      </section>
+
+
+      <section class="sec" id="key-screens" data-only="quick">
+        <div class="sec__intro" data-reveal>
+          <div class="sec__title"><p class="label">06 · Final screens</p><h2>49 screens, one calm system.</h2></div>
+          <div class="sec__text"><p>A few key screens at full size. The full story has all 49.</p></div>
+        </div>
+        <div class="flow" data-reveal><div class="flow__head"><h3>Desktop</h3><span class="label">6 screens · slide for more →</span></div><div class="srow srow--d" data-drag><figure class="tile tile--d"><div class="tile__win"><img src="img/att-screens/s14.jpg" alt="Desktop: Not marked" loading="lazy" width="1600" height="1138"></div><figcaption>Not marked</figcaption></figure><figure class="tile tile--d"><div class="tile__win"><img src="img/att-screens/s16.jpg" alt="Desktop: Checked in" loading="lazy" width="1600" height="1138"></div><figcaption>Checked in</figcaption></figure><figure class="tile tile--d"><div class="tile__win"><img src="img/att-screens/s18.jpg" alt="Desktop: Check-in failed" loading="lazy" width="1600" height="1138"></div><figcaption>Check-in failed</figcaption></figure><figure class="tile tile--d"><div class="tile__win"><img src="img/att-screens/s20.jpg" alt="Desktop: Day details" loading="lazy" width="1600" height="1138"></div><figcaption>Day details</figcaption></figure><figure class="tile tile--d"><div class="tile__win"><img src="img/att-screens/s24.jpg" alt="Desktop: Team today" loading="lazy" width="1600" height="1138"></div><figcaption>Team today</figcaption></figure><figure class="tile tile--d"><div class="tile__win"><img src="img/att-screens/s10.jpg" alt="Desktop: Log in" loading="lazy" width="1600" height="1138"></div><figcaption>Log in</figcaption></figure></div></div>
+        <div class="flow" data-reveal><div class="flow__head"><h3>Mobile web</h3><span class="label">4 screens · slide for more →</span></div><div class="srow srow--m" data-drag><figure class="tile tile--m"><img src="img/att-screens/s41.jpg" alt="Mobile web: Not marked" loading="lazy" width="780" height="1688"><figcaption>Not marked</figcaption></figure><figure class="tile tile--m"><img src="img/att-screens/s42.jpg" alt="Mobile web: Checked in" loading="lazy" width="780" height="1688"><figcaption>Checked in</figcaption></figure><figure class="tile tile--m"><img src="img/att-screens/s44.jpg" alt="Mobile web: History" loading="lazy" width="780" height="1688"><figcaption>History</figcaption></figure><figure class="tile tile--m"><img src="img/att-screens/s45.jpg" alt="Mobile web: Day details" loading="lazy" width="780" height="1688"><figcaption>Day details</figcaption></figure></div></div>
+        <div class="more" data-reveal>
+          <p class="label">Full story</p>
+          <h2>Want the whole story?</h2>
+          <p>The research behind it, the process, every screen and what I learned.</p>
+          <div class="more__links"><button type="button" class="btn btn--secondary" data-mode="full" data-go="problem">Read the full story <span class="arrow">→</span></button><a class="text-link" href="#screens" data-open-screens>See all 49 screens</a></div>
+        </div>
+      </section>
+      <section class="sec" id="learned" data-only="full">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">08 · What I learned</p><h2>What this project taught me.</h2></div></div>
+        <div class="cards cards--4" data-reveal>
+          <div class="card"><h3 style="font-size:19px">Simple is hard</h3><p style="font-size:15px;color:var(--ink-soft)">The calendar took more hours than any other screen. Making something look calm means deciding what to quiet down.</p></div>
+          <div class="card"><h3 style="font-size:19px">Clear beats short</h3><p style="font-size:15px;color:var(--ink-soft)">People don’t need fewer steps as much as they need obvious ones.</p></div>
+          <div class="card"><h3 style="font-size:19px">Design for the bad days</h3><p style="font-size:15px;color:var(--ink-soft)">Wrong passwords, failed check-ins, expired invites. That’s where people lose trust, so that’s where I spent the most care.</p></div>
+          <div class="card"><h3 style="font-size:19px">What I’d do differently</h3><p style="font-size:15px;color:var(--ink-soft)">Add a gentle reminder on workdays for people who forget to check in when they arrive.</p></div>
+        </div>
+      </section>
+    </div>
+
+    <section class="next" data-reveal>
+      <p class="label">Next project</p>
+      <div class="next__row">
+        <a class="next__img" href="fond.html" data-cursor="Next" aria-label="FOND case study"><img src="img/next-fond.jpg" alt="FOND app: Discover and Compatibility screens" loading="lazy" width="1456" height="840"></a>
+        <div class="next__text">
+          <h2>FOND</h2>
+          <p class="tags">Mobile app · Concept</p>
+          <p>Dating built on shared values, not looks.</p>
+          <a class="text-link" href="fond.html">Read case study <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="wrap foot" id="contact">
+    <section class="cta on-dark" data-reveal>
+      <div class="cta__left">
+        <p class="cta__eyebrow"><i></i>OPEN TO WORK · REMOTE</p>
+        <h2>Let’s work together.</h2>
+        <p>I’m open to remote product design roles, freelance projects and collaborations. Feel free to reach out.</p>
+        <div class="cta__btns">
+          <a class="btn btn--primary" href="mailto:sulaimontoheeb400@gmail.com">Email me</a>
+          <a class="btn btn--secondary" href="https://docs.google.com/document/d/1FTQwIDMbJTH2n3hDwcGk9VsAi0eCIkIrzyoSCxBQKmU/export?format=pdf" target="_blank" rel="noopener">Download CV <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M6 2.5v7M3 6.5l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+      <div class="cta__right">
+        <p class="cta__eyebrow" style="letter-spacing:.1em">GET IN TOUCH</p>
+        <a class="cta__email" href="mailto:sulaimontoheeb400@gmail.com">sulaimontoheeb400@gmail.com</a>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/sulaimon-toheeb" target="_blank" rel="noopener">LinkedIn <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="https://www.behance.net/Sulaimon_Toheeb" target="_blank" rel="noopener">Behance <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="https://x.com/Toheeb_design" target="_blank" rel="noopener">X <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+    </section>
+    <div class="foot__bottom"><span>© 2026 Toheeb</span><span>Lagos, Nigeria · Open to remote work</span></div>
+  </footer>
+</main>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <div class="menu__top"><a class="logo" href="index.html">TOHEEB</a><button class="menu__close" id="menuClose">Close ✕</button></div>
+  <nav class="menu__links">
+    <a href="work.html"><small>01</small>Work</a>
+    <a href="about.html"><small>02</small>About</a>
+    <a href="https://docs.google.com/document/d/1FTQwIDMbJTH2n3hDwcGk9VsAi0eCIkIrzyoSCxBQKmU/export?format=pdf" target="_blank" rel="noopener"><small>03</small>Download CV</a>
+    <a href="contact.html"><small>04</small>Contact</a>
+  </nav>
+  <div class="menu__foot">
+    <p class="cta__eyebrow"><i></i>OPEN TO WORK · REMOTE · LAGOS</p>
+    <a class="menu__email" href="mailto:sulaimontoheeb400@gmail.com">sulaimontoheeb400@gmail.com <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <div class="menu__social">
+      <a href="https://www.linkedin.com/in/sulaimon-toheeb" target="_blank" rel="noopener">LinkedIn <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="https://www.behance.net/Sulaimon_Toheeb" target="_blank" rel="noopener">Behance <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="https://x.com/Toheeb_design" target="_blank" rel="noopener">X <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<script src="js/site.js"></script>
+<script src="js/att-screens.js"></script>
+<script src="js/viewer.js"></script>
+<script src="js/case.js"></script>
+<script src="js/cursor.js"></script>
+</body>
+</html>

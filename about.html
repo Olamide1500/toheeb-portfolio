@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>About · Toheeb</title>
+<meta name="description" content="About Toheeb Sulaimon, product designer in Lagos: how I think, what I can do and the tools I use.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="About · Toheeb">
+<meta property="og:description" content="About Toheeb Sulaimon, product designer in Lagos: how I think, what I can do and the tools I use.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#F3F2EF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@1&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/case.css">
+
+<style>
+/* ---------- About ---------- */
+.nav a[aria-current] { font-weight: 700; }
+.ab-hero { display: grid; grid-template-columns: minmax(0, 420fr) minmax(0, 724fr); gap: clamp(32px, 6.8vw, 96px); align-items: start; padding-block: clamp(40px, 8vw, 120px) 0; }
+.ab-photo { position: relative; border-radius: 24px; overflow: hidden; aspect-ratio: 420 / 540; background: #E8C9A6; }
+.ab-photo img { position: absolute; z-index: 1; left: 56%; top: -13%; width: 194%; max-width: none; height: auto; transform: translateX(-50%); display: block; }
+.ab-chip { z-index: 2; }
+.ab-photo .ph-empty { position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--f-mono); font-size: 14px; color: rgba(26, 23, 20, .55); }
+.ab-chip { position: absolute; left: 16px; bottom: 16px; display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; background: rgba(250, 249, 247, .92); backdrop-filter: blur(6px); font-size: 13px; }
+.ab-chip i { width: 7px; height: 7px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 0 rgba(19, 111, 75, .45); animation: pulse 2.4s infinite; }
+.ab-text { display: grid; gap: 18px; min-width: 0; }
+.ab-text h1 { font-family: var(--f-display); font-weight: 700; font-size: clamp(2.25rem, 1.6rem + 2vw, 3.125rem); line-height: 1; letter-spacing: -.03em; }
+.ab-lead { font-size: 18px; line-height: 1.5; max-width: 60ch; }
+.ab-body { color: var(--ink-soft); font-size: 17px; line-height: 1.65; max-width: 62ch; display: grid; gap: 14px; }
+.ab-more { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .6s var(--ease-out), opacity .45s; opacity: 0; }
+.ab-more > div { overflow: hidden; display: grid; gap: 14px; }
+.ab-more.is-open { grid-template-rows: 1fr; opacity: 1; }
+.ab-toggle { justify-self: start; background: none; border: 0; padding: 4px 0; font: inherit; font-size: 16px; font-weight: 500; color: var(--ink); text-decoration: underline; text-underline-offset: 4px; cursor: pointer; }
+.ab-btns { display: flex; gap: 12px; flex-wrap: wrap; padding-top: 8px; }
+.ab-sec { padding-block: clamp(80px, 9vw, 140px) 0; }
+.ab-split { display: grid; grid-template-columns: minmax(0, 420fr) minmax(0, 724fr); gap: clamp(32px, 6.8vw, 96px); align-items: start; }
+.ab-h2 { font-family: var(--f-display); font-weight: 700; font-size: clamp(1.75rem, 1.2rem + 1.6vw, 2.25rem); line-height: 1.1; letter-spacing: -.02em; margin-top: 12px; }
+.ab-h2--xl { font-size: clamp(2.25rem, 1.4rem + 3vw, 4rem); line-height: 1; letter-spacing: -.035em; }
+.ab-sub { color: var(--ink-soft); margin-top: 16px; max-width: 46ch; }
+.think { display: grid; }
+.think div { padding-block: 26px; border-top: 1px solid var(--line); display: grid; gap: 8px; }
+.think div:first-child { border-top: 0; padding-top: 0; }
+.think h3 { font-family: var(--f-display); font-weight: 600; font-size: clamp(1.25rem, 1rem + .9vw, 1.75rem); line-height: 1.2; letter-spacing: -.01em; }
+.think p { color: var(--ink-soft); font-size: 16px; }
+
+/* receipt printer */
+.work { display: grid; grid-template-columns: minmax(0, 460fr) minmax(0, 600fr); gap: clamp(32px, 6vw, 100px); align-items: start; }
+.legend-r { display: grid; gap: 10px; margin-top: 8px; }
+.legend-r div { display: grid; grid-template-columns: 196px minmax(0, 1fr); gap: 16px; align-items: center; font-size: 15px; }
+.legend-r span:first-child { white-space: nowrap; overflow: hidden; border: 1px solid var(--line); background: #fff; border-radius: 8px; padding: 9px 12px; font-size: 13px; }
+.legend-r .m { font-family: var(--f-mono); font-size: 12px !important; }
+.legend-r .g { color: var(--grey); }
+.quote { border-left: 2px solid var(--sienna); padding: 6px 0 6px 20px; font-size: 17px; line-height: 1.55; max-width: 44ch; }
+.printer { position: relative; display: grid; justify-items: center; }
+.pr-body { position: relative; z-index: 2; width: min(100%, 600px); height: 112px; border-radius: 22px; background: linear-gradient(180deg, #F7F4EF 0%, #ECE7E0 58%, #DDD7CE 100%); box-shadow: inset 0 1px 0 #fff, inset 0 -3px 6px rgba(80, 66, 50, .12), 0 22px 34px -18px rgba(60, 45, 30, .45), 0 2px 4px rgba(60, 45, 30, .12); }
+.pr-body::after { content: ""; position: absolute; left: 36px; right: 36px; bottom: 30px; height: 7px; border-radius: 4px; background: linear-gradient(#1A1714, #3B3632); box-shadow: 0 1px 0 rgba(255, 255, 255, .7); }
+.pr-id { position: absolute; left: 26px; top: 24px; display: flex; align-items: center; gap: 8px; font-family: var(--f-mono); font-size: 12px; color: #A8A39B; }
+.pr-id i { width: 7px; height: 7px; border-radius: 50%; background: #E2A048; box-shadow: 0 0 6px rgba(226, 160, 72, .9); transition: background-color .4s, box-shadow .4s; }
+.printer.is-done .pr-id i { background: #3FA36B; box-shadow: 0 0 6px rgba(63, 163, 107, .9); }
+.printer.is-printing .pr-id i { animation: blink .5s steps(2) infinite; }
+@keyframes blink { 50% { opacity: .25; } }
+.pr-btn { position: absolute; right: 22px; top: 18px; display: flex; align-items: center; gap: 14px; background: none; border: 0; padding: 0; cursor: pointer; font-family: var(--f-mono); font-size: 12px; letter-spacing: .06em; color: var(--sienna-d); }
+.pr-btn b { position: relative; width: 46px; height: 46px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #E8865F, #B4502F 70%); box-shadow: 0 0 0 5px #F3EEE7, 0 0 0 6px rgba(180, 80, 47, .45), inset 0 -3px 5px rgba(0, 0, 0, .25), 0 4px 8px rgba(120, 50, 20, .35); transition: transform .15s, box-shadow .3s, background .4s; }
+.pr-btn:hover b { box-shadow: 0 0 0 5px #F3EEE7, 0 0 0 7px rgba(180, 80, 47, .6), inset 0 -3px 5px rgba(0, 0, 0, .25), 0 6px 12px rgba(120, 50, 20, .35); }
+.pr-btn:active b { transform: scale(.94); }
+.printer.is-done .pr-btn { color: var(--grey); }
+.printer.is-done .pr-btn b { background: radial-gradient(circle at 35% 30%, #D8D3CC, #A8A39B 70%); box-shadow: 0 0 0 5px #F3EEE7, 0 0 0 6px rgba(26, 23, 20, .15), inset 0 -3px 5px rgba(0, 0, 0, .2); }
+.printer.is-printing .pr-btn { pointer-events: none; }
+.printer.is-printing .pr-body { animation: buzz .12s linear infinite; }
+@keyframes buzz { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(.6px); } }
+.pr-slot { position: relative; z-index: 1; width: min(calc(100% - 96px), 460px); margin-top: -34px; height: 0; overflow: hidden; }
+.pr-slot > div { padding-bottom: 2px; }
+.receipt { --cut: 10px; background: #fff; padding: 56px 28px 34px; font-family: var(--f-mono); font-size: 12px; color: #4A4642; box-shadow: 0 18px 30px -16px rgba(26, 23, 20, .25);
+  -webkit-mask: linear-gradient(#000 0 0) top / 100% calc(100% - var(--cut)) no-repeat, conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) bottom / calc(var(--cut) * 2) var(--cut) repeat-x;
+          mask: linear-gradient(#000 0 0) top / 100% calc(100% - var(--cut)) no-repeat, conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) bottom / calc(var(--cut) * 2) var(--cut) repeat-x; }
+.receipt h4 { font-family: var(--f-display); font-weight: 700; font-size: 30px; color: var(--ink); text-align: center; letter-spacing: .02em; }
+.r-c { text-align: center; }
+.r-dash { border-top: 1px dashed #C9C4BC; margin-block: 14px; }
+.r-row { display: flex; justify-content: space-between; gap: 12px; }
+.r-step { margin-top: 16px; }
+.r-step .r-row span:first-child { color: var(--ink); letter-spacing: .04em; flex: 1; display: flex; gap: 8px; align-items: center; }
+.r-step .r-row span:first-child::after { content: ""; flex: 1; border-bottom: 1px dotted #C9C4BC; transform: translateY(-3px); }
+.r-q { font-family: var(--f-sans); font-weight: 500; font-size: 17px; color: var(--ink); margin-top: 6px; }
+.r-q em { font-style: normal; color: var(--sienna); }
+.r-out { margin-top: 4px; color: var(--grey); }
+.r-total { display: flex; justify-content: space-between; gap: 16px; margin-top: 10px; font-family: var(--f-display); font-weight: 700; font-size: 20px; color: var(--ink); }
+.r-total span:last-child { text-align: right; max-width: 15ch; }
+.r-acc { color: var(--sienna); }
+.barcode { height: 34px; width: 132px; margin: 6px auto 8px; background: repeating-linear-gradient(90deg, #1A1714 0 1px, transparent 1px 3px, #1A1714 3px 5px, transparent 5px 6px, #1A1714 6px 7px, transparent 7px 10px); }
+
+/* what I do */
+.acc { display: grid; }
+.acc__item { border-bottom: 1px solid var(--line); }
+.acc__btn { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px; background: none; border: 0; padding: 20px 0; cursor: pointer; text-align: left; color: var(--ink); font-family: var(--f-display); font-weight: 700; font-size: clamp(1.375rem, 1rem + 1.2vw, 2.375rem); letter-spacing: -.02em; line-height: 1.15; }
+.acc__icon { position: relative; flex: none; width: 28px; height: 28px; border-radius: 50%; border: 1.5px solid var(--ink); transition: background-color .3s, color .3s; }
+.acc__icon::before, .acc__icon::after { content: ""; position: absolute; left: 50%; top: 50%; width: 11px; height: 1.5px; background: currentColor; translate: -50% -50%; transition: transform .45s var(--ease-out); }
+.acc__icon::after { transform: rotate(90deg); }
+.acc__item.is-open .acc__icon { background: var(--ink); color: var(--paper-l); }
+.acc__item.is-open .acc__icon::after { transform: rotate(0deg); }
+.acc__panel { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .5s var(--ease-out); }
+.acc__panel > div { overflow: hidden; }
+.acc__panel p { color: var(--ink-soft); max-width: 52ch; padding-bottom: 22px; }
+.acc__item.is-open .acc__panel { grid-template-rows: 1fr; }
+.tools { display: flex; gap: 14px 40px; align-items: baseline; flex-wrap: wrap; border-top: 1px solid var(--line); margin-top: 48px; padding-top: 24px; }
+.reel { position: relative; aspect-ratio: 16 / 9; border-radius: 24px; background: #E9E5DF; display: grid; place-items: center; overflow: hidden; }
+.reel b { width: 64px; height: 64px; border-radius: 50%; background: var(--ink); display: grid; place-items: center; }
+.reel b::after { content: ""; border-left: 16px solid var(--paper-l); border-top: 10px solid transparent; border-bottom: 10px solid transparent; margin-left: 5px; }
+.reel span { position: absolute; left: 20px; bottom: 16px; font-family: var(--f-mono); font-size: 13px; color: var(--grey); }
+.ab-foot { padding-block: clamp(80px, 9vw, 140px) 64px; }
+
+/* page entrance: quiet rise */
+.ab-in > * { animation: abIn .9s var(--ease-out) both; }
+.ab-in > *:nth-child(2) { animation-delay: .08s; } .ab-in > *:nth-child(3) { animation-delay: .16s; } .ab-in > *:nth-child(4) { animation-delay: .24s; } .ab-in > *:nth-child(5) { animation-delay: .32s; } .ab-in > *:nth-child(6) { animation-delay: .4s; }
+.ab-photo-in { animation: abPhoto 1.2s var(--ease-out) both; }
+@keyframes abIn { from { opacity: 0; transform: translateY(16px); } }
+@keyframes abPhoto { from { opacity: 0; transform: scale(1.03); } }
+@media (prefers-reduced-motion: reduce) { .ab-in > *, .ab-photo-in { animation: none; } .pr-slot { transition: none !important; } }
+
+@media (max-width: 899px) {
+  .ab-hero, .ab-split, .work { grid-template-columns: 1fr; }
+  .ab-hero { padding-top: 24px; gap: 28px; }
+  .ab-photo { aspect-ratio: 354 / 390; }
+  .ab-photo img { width: 165%; top: -7%; }
+  .ab-btns { flex-direction: column; }
+  .ab-btns .btn { width: 100%; }
+  .legend-r div { grid-template-columns: 168px minmax(0, 1fr); gap: 12px; font-size: 14px; }
+  .pr-body { height: 104px; border-radius: 18px; }
+  .pr-body::after { left: 18px; right: 18px; bottom: 24px; height: 6px; }
+  .pr-id { left: 18px; top: 20px; }
+  .pr-btn { right: 14px; top: 12px; gap: 12px; font-size: 11px; }
+  .pr-btn b { width: 38px; height: 38px; box-shadow: 0 0 0 4px #F3EEE7, 0 0 0 5px rgba(180, 80, 47, .45), inset 0 -3px 5px rgba(0, 0, 0, .25), 0 3px 6px rgba(120, 50, 20, .35); }
+  .printer.is-feeding .pr-id i { animation: blink 1s steps(2) infinite; }
+  .pr-slot { width: calc(100% - 40px); }
+  .receipt { padding: 50px 18px 30px; }
+  .tools { margin-top: 32px; }
+  .reel-wrap { order: 2; }
+}
+
+/* ---------- reading highlight: words turn dark as you read down ---------- */
+.rd .w { color: #C3BDB4; transition: color .45s ease; }
+.rd .w.on { color: var(--ink); }
+.ab-body.rd { color: var(--ink); }
+.ab-toggle { position: relative; text-decoration: none; display: inline-flex; gap: 8px; align-items: center; }
+.ab-toggle::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: currentColor; transform-origin: left; transform: scaleX(.35); transition: transform .8s var(--ease-out); }
+.ab-toggle.is-cued::after, .ab-toggle:hover::after { transform: scaleX(1); }
+.ab-toggle.is-cued { animation: cue 1.6s var(--ease-out) .2s 2; }
+@keyframes cue { 0%, 100% { transform: none; } 30% { transform: translateX(6px); } 55% { transform: none; } }
+@media (prefers-reduced-motion: reduce) { .rd .w { color: inherit; transition: none; } .ab-toggle.is-cued { animation: none; } }
+</style>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="index.html">TOHEEB</a>
+    <nav class="nav" aria-label="Main">
+      <a href="about.html" aria-current="page">About</a>
+      <a href="https://docs.google.com/document/d/1FTQwIDMbJTH2n3hDwcGk9VsAi0eCIkIrzyoSCxBQKmU/view" target="_blank" rel="noopener">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menuOpen" aria-label="Open menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+  </div>
+</header>
+
+<main>
+  <section class="wrap ab-hero">
+    <figure class="ab-photo ab-photo-in" style="margin:0">
+      <img src="img/about-photo.jpg" alt="Sulaimon Toheeb" width="840" height="1080" onerror="this.remove()">
+      <span class="ph-empty" aria-hidden="true">Photo</span>
+      <span class="ab-chip"><i></i>Open to remote roles</span>
+    </figure>
+    <div class="ab-text ab-in">
+      <p class="label">About me</p>
+      <h1>Hi, I’m Toheeb.</h1>
+      <p class="ab-lead rd">I’m a Product Designer based in Lagos, Nigeria, with a background in Economics and an interest in building digital products that solve everyday problems.</p>
+      <div class="ab-body rd">
+        <p>Studying Economics taught me that people don’t always make decisions based on what’s best for them. Sometimes, they choose what feels easier, faster, or more convenient. That perspective shapes how I design: I try to understand why people behave the way they do, then make the right choice the easy one.</p>
+        <div class="ab-more" id="abMore"><div>
+          <p>So far I’ve built my practice through my own projects: a check-in tool people actually use, a savings app that makes it hard to break your own plan, and redesigns of screens Nigerians deal with every day.</p>
+          <p>I’m open to remote roles and to working with teams who care about the people using what they build.</p>
+        </div></div>
+        <button class="ab-toggle" id="abToggle" aria-expanded="false" aria-controls="abMore">Read more…</button>
+      </div>
+      <div class="ab-btns">
+        <a class="btn btn--primary" href="https://docs.google.com/document/d/1FTQwIDMbJTH2n3hDwcGk9VsAi0eCIkIrzyoSCxBQKmU/export?format=pdf" target="_blank" rel="noopener">Download CV <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M6 2.5v7M3 6.5l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="btn btn--secondary" href="index.html">See my work <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap ab-sec ab-split" data-reveal>
+    <div><p class="label">How I think</p><h2 class="ab-h2">How Economics shapes my design</h2><p class="ab-sub">I design for how people really behave.</p></div>
+    <div class="think">
+      <div><h3>When a tool is confusing, people stop using it.</h3><p>So I make the main action obvious.</p></div>
+      <div><h3>Plans break when real life happens.</h3><p>So I design for the moment things go wrong.</p></div>
+      <div><h3>People trust what they understand.</h3><p>So I show the reason behind every result.</p></div>
+    </div>
+  </section>
+
+  <section class="wrap ab-sec work" id="process">
+    <div data-reveal>
+      <p class="label">How I work</p>
+      <h2 class="ab-h2 ab-h2--xl">My process, on one receipt.</h2>
+      <p class="ab-sub">I use the same five steps on every project. The receipt shows each step, the question I ask, and what you get from it.</p>
+      <p class="label" style="margin-top:36px">How to read it</p>
+      <div class="legend-r">
+        <div><span class="m">01&nbsp;&nbsp;UNDERSTAND ·····</span><span>The step</span></div>
+        <div><span>Who is this for<em style="font-style:normal;color:var(--sienna)">?</em></span><span>The question I ask at that step</span></div>
+        <div><span class="m g">→ a clear problem</span><span>What you get from it</span></div>
+      </div>
+      <p class="quote" style="margin-top:36px">In Economics, I learned that too many options make people stop and choose nothing. So I give every screen one clear next step.</p>
+    </div>
+    <div class="printer" id="printer" data-reveal>
+      <div class="pr-body">
+        <span class="pr-id"><i></i>T-01</span>
+        <button class="pr-btn" id="printBtn" aria-controls="receipt"><span id="printLabel">PRESS TO PRINT&nbsp;&nbsp;→</span><b aria-hidden="true"></b></button>
+      </div>
+      <div class="pr-slot"><div>
+        <div class="receipt" id="receipt" aria-live="polite">
+          <h4>TOHEEB</h4>
+          <p class="r-c" style="margin-top:6px">PRODUCT DESIGN · LAGOS · REMOTE</p>
+          <p class="r-c" style="margin-top:10px;color:var(--ink)">PRINTED FOR: <span class="r-acc">YOU</span> · TODAY</p>
+          <div class="r-dash"></div>
+          <div class="r-row"><span>STEP</span><span>QTY</span></div>
+          <div class="r-step"><div class="r-row"><span>01&nbsp;&nbsp;UNDERSTAND</span><span>×1</span></div><p class="r-q">Who is this for<em>?</em></p><p class="r-out">→ a clear problem</p></div><div class="r-step"><div class="r-row"><span>02&nbsp;&nbsp;DEFINE</span><span>×1</span></div><p class="r-q">What is the main job<em>?</em></p><p class="r-out">→ a simple map of the screens</p></div><div class="r-step"><div class="r-row"><span>03&nbsp;&nbsp;DESIGN</span><span>×1</span></div><p class="r-q">What is the simplest way<em>?</em></p><p class="r-out">→ rough designs, then final screens</p></div><div class="r-step"><div class="r-row"><span>04&nbsp;&nbsp;TEST</span><span>×1</span></div><p class="r-q">Where do people get stuck<em>?</em></p><p class="r-out">→ a list of what to fix</p></div><div class="r-step"><div class="r-row"><span>05&nbsp;&nbsp;DELIVER</span><span>×1</span></div><p class="r-q">Is every case covered<em>?</em></p><p class="r-out">→ designs ready to build</p></div>
+          <div class="r-dash" style="margin-top:20px"></div>
+          <div class="r-row"><span>STEPS</span><span>5</span></div>
+          <div class="r-row" style="margin-top:6px"><span>REPEATS</span><span>as often as needed</span></div>
+          <div class="r-total"><span>TOTAL</span><span>Clear reasons for every choice</span></div>
+          <div class="r-dash"></div>
+          <div class="r-row"><span>IT STARTS WITH</span><span>good questions</span></div>
+          <div class="r-row" style="margin-top:6px"><span>YOU SAVE</span><span class="r-acc">costly fixes after launch</span></div>
+          <div class="r-dash"></div>
+          <div class="barcode" aria-hidden="true"></div>
+          <p class="r-c">KEEP THIS RECEIPT</p>
+        </div>
+      </div></div>
+    </div>
+  </section>
+
+  <section class="wrap ab-sec" id="services">
+    <div class="ab-split">
+      <div data-reveal><p class="label">What I do</p><h2 class="ab-h2 ab-h2--xl">What you can hire me for.</h2></div>
+      <div class="acc" data-reveal><div class="acc__item is-open"><h3><button class="acc__btn" aria-expanded="true" aria-controls="acc-0" id="accb-0">Mobile app design<i class="acc__icon" aria-hidden="true"></i></button></h3><div class="acc__panel" id="acc-0" role="region" aria-labelledby="accb-0"><div><p>Apps for iPhone and Android that feel easy to use, from sign-up to every screen after.</p></div></div></div><div class="acc__item"><h3><button class="acc__btn" aria-expanded="false" aria-controls="acc-1" id="accb-1">Web app design<i class="acc__icon" aria-hidden="true"></i></button></h3><div class="acc__panel" id="acc-1" role="region" aria-labelledby="accb-1"><div><p>Dashboards and tools for teams, where the main task is the most obvious thing on the screen.</p></div></div></div><div class="acc__item"><h3><button class="acc__btn" aria-expanded="false" aria-controls="acc-2" id="accb-2">Websites<i class="acc__icon" aria-hidden="true"></i></button></h3><div class="acc__panel" id="acc-2" role="region" aria-labelledby="accb-2"><div><p>Clear, responsive websites that read well on a phone, a tablet and a desktop.</p></div></div></div><div class="acc__item"><h3><button class="acc__btn" aria-expanded="false" aria-controls="acc-3" id="accb-3">Design systems<i class="acc__icon" aria-hidden="true"></i></button></h3><div class="acc__panel" id="acc-3" role="region" aria-labelledby="accb-3"><div><p>Colours, type and reusable components, so every screen stays consistent as a product grows.</p></div></div></div><div class="acc__item"><h3><button class="acc__btn" aria-expanded="false" aria-controls="acc-4" id="accb-4">Prototyping<i class="acc__icon" aria-hidden="true"></i></button></h3><div class="acc__panel" id="acc-4" role="region" aria-labelledby="accb-4"><div><p>Clickable Figma prototypes, so a flow can be tried and fixed before anything is built.</p></div></div></div><div class="acc__item"><h3><button class="acc__btn" aria-expanded="false" aria-controls="acc-5" id="accb-5">User flows & wireframes<i class="acc__icon" aria-hidden="true"></i></button></h3><div class="acc__panel" id="acc-5" role="region" aria-labelledby="accb-5"><div><p>Every path and state mapped in greyscale first, before any colour goes in.</p></div></div></div></div>
+    </div>
+    <div class="tools" data-reveal><span class="label">Tools</span><span>Figma&nbsp; · &nbsp;Figma prototyping&nbsp; · &nbsp;Figma Motion (learning)</span></div>
+  </section>
+
+  <section class="wrap ab-sec ab-split" data-reveal>
+    <div style="display:grid;gap:14px;align-content:center;align-self:center">
+      <p class="label">Extra skill</p>
+      <h2 class="ab-h2" style="margin-top:0">AI video for ads</h2>
+      <p class="ab-sub" style="margin-top:0">Alongside product design, I also create AI-generated video ads for brands and products.</p>
+      <span class="btn btn--disabled" style="justify-self:start;margin-top:8px">Ad reel coming soon</span>
+    </div>
+    <div class="reel-wrap"><div class="reel" role="img" aria-label="Ad reel placeholder"><b aria-hidden="true"></b><span>Ad reel · coming soon</span></div></div>
+  </section>
+
+  <footer class="wrap foot ab-foot" id="contact">
+    <section class="cta on-dark" data-reveal>
+      <div class="cta__left">
+        <p class="cta__eyebrow"><i></i>OPEN TO WORK · REMOTE</p>
+        <h2>Let’s work together.</h2>
+        <p>I’m open to remote product design roles, freelance projects and collaborations. Feel free to reach out.</p>
+        <div class="cta__btns">
+          <a class="btn btn--primary" href="mailto:sulaimontoheeb400@gmail.com">Email me</a>
+          <a class="btn btn--secondary" href="https://docs.google.com/document/d/1FTQwIDMbJTH2n3hDwcGk9VsAi0eCIkIrzyoSCxBQKmU/export?format=pdf" target="_blank" rel="noopener">Download CV <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M6 2.5v7M3 6.5l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+      <div class="cta__right">
+        <p class="cta__eyebrow" style="letter-spacing:.1em">GET IN TOUCH</p>
+        <a class="cta__email" href="mailto:sulaimontoheeb400@gmail.com">sulaimontoheeb400@gmail.com</a>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/sulaimon-toheeb" target="_blank" rel="noopener">LinkedIn <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="https://www.behance.net/Sulaimon_Toheeb" target="_blank" rel="noopener">Behance <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="https://x.com/Toheeb_design" target="_blank" rel="noopener">X <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+    </section>
+    <div class="foot__bottom"><span>© 2026 Toheeb</span><span>Lagos, Nigeria · Open to remote work</span></div>
+  </footer>
+</main>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <div class="menu__top"><a class="logo" href="index.html">TOHEEB</a><button class="menu__close" id="menuClose">Close ✕</button></div>
+  <nav class="menu__links">
+    <a href="work.html"><small>01</small>Work</a>
+    <a href="about.html" aria-current="page"><small>02</small>About</a>
+    <a href="https://docs.google.com/document/d/1FTQwIDMbJTH2n3hDwcGk9VsAi0eCIkIrzyoSCxBQKmU/export?format=pdf" target="_blank" rel="noopener"><small>03</small>Download CV</a>
+    <a href="contact.html"><small>04</small>Contact</a>
+  </nav>
+  <div class="menu__foot">
+    <p class="cta__eyebrow"><i></i>OPEN TO WORK · REMOTE · LAGOS</p>
+    <a class="menu__email" href="mailto:sulaimontoheeb400@gmail.com">sulaimontoheeb400@gmail.com <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <div class="menu__social">
+      <a href="https://www.linkedin.com/in/sulaimon-toheeb" target="_blank" rel="noopener">LinkedIn <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="https://www.behance.net/Sulaimon_Toheeb" target="_blank" rel="noopener">Behance <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="https://x.com/Toheeb_design" target="_blank" rel="noopener">X <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<script src="js/site.js"></script>
+<script>
+
+/* Reading highlight: the intro lights up word by word on arrival, the rest follows your scroll */
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var blocks = document.querySelectorAll('.rd'); if (!blocks.length) return;
+  function split(el) {
+    var walk = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null), nodes = [], n;
+    while ((n = walk.nextNode())) if (n.nodeValue.trim() && !n.parentNode.closest('button')) nodes.push(n);
+    nodes.forEach(function (t) {
+      var f = document.createDocumentFragment();
+      t.nodeValue.split(/(\s+)/).forEach(function (part) {
+        if (!part) return;
+        if (/^\s+$/.test(part)) f.appendChild(document.createTextNode(part));
+        else { var s = document.createElement('span'); s.className = 'w'; s.textContent = part; f.appendChild(s); }
+      });
+      t.parentNode.replaceChild(f, t);
+    });
+  }
+  blocks.forEach(split);
+  var lead = document.querySelectorAll('.ab-lead .w'), body = Array.prototype.slice.call(document.querySelectorAll('.ab-body .w'));
+  var toggle = document.getElementById('abToggle'), more = document.getElementById('abMore'), cued = false;
+  if (reduce) { document.querySelectorAll('.rd .w').forEach(function (w) { w.classList.add('on'); }); return; }
+  /* 1. on arrival: the first sentence lights up at a calm reading pace */
+  lead.forEach(function (w, i) { setTimeout(function () { w.classList.add('on'); }, 500 + i * 85); });
+  /* 2. the rest: a word turns dark once it scrolls above the reading line */
+  var ticking = false;
+  function line() { return window.innerHeight * (window.innerWidth < 900 ? 0.62 : 0.4); }
+  function update() {
+    ticking = false;
+    var L = line(), last = null;
+    for (var i = 0; i < body.length; i++) {
+      var w = body[i]; if (w.offsetParent === null) continue;
+      if (w.closest('.ab-more') && !more.classList.contains('is-open')) continue;
+      var on = w.getBoundingClientRect().top < L;
+      if (on) w.classList.add('on');
+      last = w;
+    }
+    if (!cued && !more.classList.contains('is-open')) {
+      var visible = body.filter(function (w) { return !w.closest('.ab-more'); });
+      if (visible.length && visible[visible.length - 1].classList.contains('on')) { cued = true; toggle.classList.add('is-cued'); }
+    }
+  }
+  function req() { if (!ticking) { ticking = true; requestAnimationFrame(update); } }
+  window.addEventListener('scroll', req, { passive: true });
+  window.addEventListener('resize', req);
+  toggle.addEventListener('click', function () {
+    toggle.classList.remove('is-cued');
+    /* newly opened lines that are already above the reading line light up in order */
+    setTimeout(function () {
+      var k = 0, L = line();
+      more.querySelectorAll('.w').forEach(function (w) { if (w.getBoundingClientRect().top < L) setTimeout(function () { w.classList.add('on'); }, 40 * k++); });
+      req();
+    }, 250);
+  });
+  req();
+})();
+/* Read more / less */
+(function () {
+  var t = document.getElementById('abToggle'), m = document.getElementById('abMore');
+  t.addEventListener('click', function () { var o = m.classList.toggle('is-open'); t.setAttribute('aria-expanded', String(o)); t.textContent = o ? 'Read less ↑' : 'Read more…'; });
+})();
+/* What I do: one panel open at a time */
+document.querySelectorAll('.acc__btn').forEach(function (b) {
+  b.addEventListener('click', function () {
+    var item = b.closest('.acc__item'), open = !item.classList.contains('is-open');
+    document.querySelectorAll('.acc__item').forEach(function (x) { x.classList.remove('is-open'); x.querySelector('.acc__btn').setAttribute('aria-expanded', 'false'); });
+    if (open) { item.classList.add('is-open'); b.setAttribute('aria-expanded', 'true'); }
+  });
+});
+/* Receipt printer.
+   Desktop: one press prints the whole receipt.
+   Phone: one press prints about half, then the rest feeds out as you scroll down to read it. */
+(function () {
+  var p = document.getElementById('printer'), btn = document.getElementById('printBtn'), lab = document.getElementById('printLabel');
+  var slot = p.querySelector('.pr-slot'), rec = document.getElementById('receipt');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var phone = function () { return window.matchMedia('(max-width: 899px)').matches; };
+  var EASE = 'cubic-bezier(.5,.05,.3,1)', shown = 0, feeding = false, buzzT;
+  function setH(h, ms) { slot.style.transition = reduce ? 'none' : 'height ' + ms + 'ms ' + EASE; slot.style.height = h + 'px'; shown = h; }
+  function done() {
+    feeding = false; window.removeEventListener('scroll', feed);
+    p.classList.remove('is-printing', 'is-feeding'); p.classList.add('is-done');
+    lab.innerHTML = 'PRINT AGAIN&nbsp;&nbsp;↺';
+    setTimeout(function () { if (p.classList.contains('is-done')) { slot.style.transition = 'none'; slot.style.height = 'auto'; } }, 400);
+  }
+  function feed() {
+    if (!feeding) return;
+    var H = rec.offsetHeight, top = slot.getBoundingClientRect().top;
+    var want = Math.min(H, Math.max(shown, window.innerHeight - top - 72));
+    if (want > shown + 2) {
+      setH(want, 260);
+      p.classList.add('is-printing'); clearTimeout(buzzT); buzzT = setTimeout(function () { p.classList.remove('is-printing'); }, 280);
+    }
+    if (shown >= H - 2) done();
+  }
+  function go() {
+    var H = rec.offsetHeight;
+    p.classList.remove('is-done'); p.classList.add('is-printing'); lab.textContent = 'PRINTING…';
+    if (reduce) { setH(H, 0); done(); return; }
+    if (!phone()) { setH(H, 2400); setTimeout(done, 2450); return; }
+    setH(Math.round(H * 0.45), 1500);
+    setTimeout(function () {
+      p.classList.remove('is-printing'); p.classList.add('is-feeding'); lab.innerHTML = 'SCROLL TO READ&nbsp;&nbsp;↓';
+      feeding = true; window.addEventListener('scroll', feed, { passive: true }); feed();
+    }, 1550);
+  }
+  btn.addEventListener('click', function () {
+    if (feeding) return;
+    if (p.classList.contains('is-done')) {
+      slot.style.transition = 'none'; slot.style.height = rec.offsetHeight + 'px'; void slot.offsetHeight;
+      setH(0, 500); p.classList.remove('is-done'); lab.textContent = 'PRINTING…';
+      setTimeout(go, 520);
+    } else go();
+  });
+})();
+</script>
+<script src="js/cursor.js"></script>
+</body>
+</html>

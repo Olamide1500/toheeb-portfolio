@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GradSave · Toheeb</title>
+<meta name="description" content="Case study: GradSave, a savings app built for students with irregular income.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="GradSave · Toheeb">
+<meta property="og:description" content="Case study: GradSave, a savings app built for students with irregular income.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#F3F2EF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@1&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/viewer.css">
+<link rel="stylesheet" href="css/case.css">
+<style>:root { --proj: var(--p-grad); --tint: var(--t-grad); }</style>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="index.html">TOHEEB</a>
+    <nav class="nav" aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="https://docs.google.com/document/d/1FTQwIDMbJTH2n3hDwcGk9VsAi0eCIkIrzyoSCxBQKmU/view" target="_blank" rel="noopener">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menuOpen" aria-label="Open menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+  </div>
+</header>
+
+<main>
+  <section class="wrap cs-hero">
+    <a class="back" href="work.html"><span class="arrow">←</span> All work</a>
+    <div class="cs-top">
+      <div class="cs-intro">
+        <div class="mode" role="group" aria-label="Reading mode"><button type="button" data-mode="quick" aria-pressed="false">Quick read</button><button type="button" data-mode="full" aria-pressed="true">Full story</button></div>
+        <p class="label">03 / 07 · Mobile app · Student savings · Concept</p>
+        <h1 class="cs-title">GradSave</h1>
+        <p class="cs-sub">Save when you can. Know when you can take it out.</p>
+        <p class="cs-lead">A savings app built only for students. Money goes into a goal or an emergency fund, and the rules are explained before any money moves.</p>
+        <p class="for"><span class="label">For</span><span>Students with irregular income, saving for something real</span></p>
+      </div>
+      <aside class="short">
+        <p class="label">The short version</p>
+        <dl>
+          <div><dt>Problem</dt><dd>Students struggle to save consistently, because irregular income and surprise expenses keep breaking their plans.</dd></div>
+          <div><dt>What I did</dt><dd>A group call with 6 students and a survey, then a decisions log, MVP scope, 7 user flows, a design system and the screens.</dd></div>
+          <div><dt>Outcome</dt><dd>73 screens on one design system · 7 user flows with edge cases.</dd></div>
+        </dl>
+      </aside>
+    </div>
+    <div class="ppanel"><div class="srow srow--panel" data-drag><figure class="tile tile--m"><img src="img/gs-screens/s26.jpg" alt="GradSave: Home" loading="lazy" width="1206" height="2622"><figcaption>Home</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s42.jpg" alt="GradSave: Goal details" loading="lazy" width="1206" height="2622"><figcaption>Goal details</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s28.jpg" alt="GradSave: Emergency" loading="lazy" width="1206" height="2622"><figcaption>Emergency</figcaption></figure></div></div>
+    <div class="facts"><div><span class="label">Role</span><span>Product designer</span></div><div><span class="label">Team</span><span>Solo</span></div><div><span class="label">Timeline</span><span>2025, refined 2026</span></div><div><span class="label">Platform</span><span>Mobile app</span></div><div><span class="label">Tools</span><span>Figma</span></div><div><span class="label">Screens</span><span>73 · <a href="#screens" data-open-screens>See all →</a></span></div></div>
+  </section>
+
+  <div class="wrap cs-body">
+    <nav class="chapters" aria-label="On this page"><span class="label">On this page</span><a href="#problem">The problem</a><a href="#research">Research</a><a href="#decisions">Key decisions</a><a href="#left-out">What I left out</a><a href="#visual">Visual design</a><a href="#process" data-only="full">Process</a><a href="#screens" data-only="full">Final screens</a><a href="#key-screens" data-only="quick">Final screens</a><a href="#screens" data-open-screens>All 73 screens</a><a href="#learned" data-only="full">What I learned</a></nav>
+    <div class="sections">
+      <section class="sec" id="problem">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">01 · The problem</p><h2>Saving for something real, with money that never arrives on time.</h2></div><div class="sec__text" data-only="full"><p>Students save for things that matter: a laptop, school fees, a course. But their money comes from parents, allowances, part-time work, side hustles and gifts, at unpredictable times. When something urgent comes up, the savings plan is the first thing to break.</p></div></div><div class="callout" data-reveal><p class="label">How might we</p><p>Help students save whenever money comes in, keep goal money apart from spending money, and know exactly when they can take it out?</p></div>
+      </section>
+      <section class="sec" id="research">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">02 · Research</p><h2>Not careless. Just unpredictable.</h2></div><div class="sec__text" data-only="full"><p>In 2025 I ran a scheduled group call with 6 students (300 and 400 level) and a survey with actual students.</p></div></div><div class="cards cards--3" data-reveal><div class="card stat"><b>6</b><p>students on a group call, 300 and 400 level</p><span class="label">Group call, 2025</span></div><div class="card stat"><b>5</b><p>kinds of income: parents, allowances, part-time work, side hustles and gifts</p><span class="label">Research, 2025</span></div><div class="card stat"><b>3</b><p>needs: a specific goal, a simple structure and room for surprises</p><span class="label">Research summary</span></div></div><div class="cards cards--3" data-reveal data-only="full"><div class="insight"><span class="label">Insight 01</span><h3>Income is irregular</h3><p>Money arrives at unpredictable times, so fixed schedules don’t fit.</p></div><div class="insight"><span class="label">Insight 02</span><h3>Goals are real</h3><p>They save for something specific, not just “saving”.</p></div><div class="insight"><span class="label">Insight 03</span><h3>Mental tracking fails</h3><p>Goal money and spending money blur when it’s all in your head.</p></div></div><p class="note" data-only="full">A small sample, so I treat it as direction rather than proof for every student.</p>
+      </section>
+      <section class="sec decisions decisions--phone" id="decisions">
+        <div class="dec-track"><div class="dec-pin">
+          <div class="dec-head"><div class="sec__title"><p class="label">03 · Key decisions</p><h2>Three choices that keep the money honest.</h2></div><div class="dec-steps" aria-hidden="true"><button type="button" class="dec-step is-active" data-step="0" tabindex="-1"><span class="dec-step__n">01</span><span class="dec-step__t">No surprises</span><i><b></b></i></button><button type="button" class="dec-step" data-step="1" tabindex="-1"><span class="dec-step__n">02</span><span class="dec-step__t">Irregular income</span><i><b></b></i></button><button type="button" class="dec-step" data-step="2" tabindex="-1"><span class="dec-step__n">03</span><span class="dec-step__t">Trust</span><i><b></b></i></button></div></div>
+          <div class="dec-stage">
+            <article class="decision is-active" data-i="0"><div class="figure"><img src="img/gs/dec-1.jpg" alt="The Why is my goal locked sheet explaining the lock rule" loading="lazy"></div><div class="decision__text"><span class="decision__num">01</span><h3>Rules before money</h3><p>The lock rule is explained and acknowledged before a goal is created, then shown again on goal details and in support. No surprises after money goes in.</p><span class="answers" data-only="full">Answers: no surprises</span></div></article>
+            <article class="decision" data-i="1"><div class="figure"><img src="img/gs/dec-2.jpg" alt="The Emergency money tab with its own balance" loading="lazy"></div><div class="decision__text"><span class="decision__num">02</span><h3>An emergency fund that never locks</h3><p>Its own tab, its own balance and its own rules, so a surprise expense comes out of here instead of breaking a goal.</p><span class="answers" data-only="full">Answers: irregular income</span></div></article>
+            <article class="decision" data-i="2"><div class="figure"><img src="img/gs/dec-3.jpg" alt="Checking your payment screen showing a pending payment" loading="lazy"></div><div class="decision__text"><span class="decision__num">03</span><h3>Only “added” when it really is</h3><p>Money counts as saved only after the payment provider confirms it. Pending is shown separately, and failed payments say so.</p><span class="answers" data-only="full">Answers: trust</span></div></article>
+          </div>
+        </div></div>
+      </section>
+      <section class="sec" id="left-out">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">04 · What I left out</p><h2>Auto-save waits.</h2></div><div class="sec__text"><p>Fixed schedules clash with irregular student income: debits fail, or money gets locked at the wrong moment. I also kept out investments, budgeting, streaks, badges and leaderboards, so the MVP does one loop well: add money, keep it safe, take it out on time.</p></div></div><figure class="figure" style="margin:0" data-reveal data-only="full"><img src="img/gs/leftout.jpg" alt="The GradSave user flow document: from first open to money saved, in five steps" loading="lazy"></figure>
+      </section>
+      <section class="sec" id="visual">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">05 · Visual design</p><h2>Clean indigo, one warm ember.</h2></div><div class="sec__text" data-only="full"><p>Neutrals cover about 90% of a screen, indigo about 8% for trust and action, and ember about 2%, used only for growth. Status colours are fixed, so pending, success and failed always look the same.</p></div></div><div class="swatches" data-reveal><div><i style="background:#18224A"></i>Indigo · primary<span>#18224A</span></div><div><i style="background:#2C3868"></i>Indigo 2<span>#2C3868</span></div><div><i style="background:#ECEEF4;box-shadow:inset 0 0 0 1px var(--line)"></i>Mist<span>#ECEEF4</span></div><div><i style="background:#B4532F"></i>Ember · growth<span>#B4532F</span></div><div><i style="background:#141A33"></i>Text<span>#141A33</span></div></div><div class="typecards" data-reveal><div class="card"><b style="font-family:'Plus Jakarta Sans',var(--f-sans)">Aa</b><span style="font-size:18px">Plus Jakarta Sans</span><span style="font-size:15px;color:var(--ink-soft)">One font for everything.</span></div><div class="card"><b style="font-family:'Plus Jakarta Sans',var(--f-sans)">7</b><span style="font-size:18px">7 sizes</span><span style="font-size:15px;color:var(--ink-soft)">12 · 14 · 16 · 20 · 26 · 34 · 40</span></div></div><p class="label">Components · 73 screens on one set of styles · slide for more →</p><div class="srow srow--comp" data-drag data-reveal><figure class="tile tile--c"><img src="img/gs/comp-1.jpg" alt="Buttons, chips and notes" loading="lazy"></figure><figure class="tile tile--c"><img src="img/gs/comp-2.jpg" alt="Fields, field error and list row" loading="lazy"></figure><figure class="tile tile--c"><img src="img/gs/comp-3.jpg" alt="Goal card and tab bar" loading="lazy"></figure></div>
+      </section>
+      <section class="sec" id="process" data-only="full">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">06 · Process</p><h2>Rules first, then screens.</h2></div></div><div class="cards cards--3" data-reveal data-only="full"><div class="card"><span class="label">Step 01</span><h3 style="font-size:18px">Read me and decisions log</h3><p style="font-size:15px;color:var(--ink-soft)">Problem, promise, scope and every decision with its reason, before drawing a screen.</p></div><div class="card"><span class="label">Step 02</span><h3 style="font-size:18px">User flows</h3><p style="font-size:15px;color:var(--ink-soft)">7 flows: the core loop, both payment branches and edge states like failed payments and wrong codes.</p></div><div class="card"><span class="label">Step 03</span><h3 style="font-size:18px">Sketch, mid-fi, then hi-fi</h3><p style="font-size:15px;color:var(--ink-soft)">Home sketched on paper for a new and an existing student, then final structure and copy in grayscale, then Clean indigo through variables with three modes.</p></div></div><div class="ppanel" data-reveal><div class="srow srow--panel" data-drag><figure class="tile tile--m tile--photo"><img src="img/gs/sketch-2.jpg" alt="Paper sketch of the GradSave Home for a new student, before any savings" loading="lazy" width="1200" height="2350"><figcaption>Sketch · new student</figcaption></figure><figure class="tile tile--m tile--photo"><img src="img/gs/sketch-1.jpg" alt="Paper sketch of the GradSave Home for a student with savings" loading="lazy" width="1200" height="2407"><figcaption>Sketch · existing student</figcaption></figure><figure class="tile tile--m"><img src="img/gs/mid-checking.jpg" alt="GradSave Home in grayscale while the student ID is checked" loading="lazy" width="1179" height="2556"><figcaption>Mid-fi · first use</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s21.jpg" alt="GradSave: Home while the student ID is checked" loading="lazy" width="1206" height="2622"><figcaption>Final · first use</figcaption></figure><figure class="tile tile--m"><img src="img/gs/mid-home.jpg" alt="GradSave Home in grayscale with a savings goal" loading="lazy" width="1179" height="2556"><figcaption>Mid-fi · Home</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s26.jpg" alt="GradSave: Home" loading="lazy" width="1206" height="2622"><figcaption>Final · Home</figcaption></figure></div></div>
+      </section>
+      <section class="sec" id="screens" data-only="full">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">07 · Final screens</p><h2>All 73 screens, in one view.</h2></div><div class="sec__text"><p>12 flows, from the first open to log out, including 20 edge cases. The main flows are also shown larger below.</p></div></div><div class="wall-cta" data-reveal><button type="button" class="btn btn--primary" data-open-screens>Open all 73 screens <span class="arrow">→</span></button><span class="legend"><i></i>Edge case: an error, empty or loading screen</span></div><p class="label" style="margin-top:12px">Main flows · full size</p><div class="flow" data-reveal><div class="flow__head"><h3>Getting started</h3><span class="label">7 screens · slide for more →</span></div><div class="srow srow--m" data-drag><figure class="tile tile--m"><img src="img/gs-screens/s01.jpg" alt="GradSave: Splash" loading="lazy" width="1206" height="2622"><figcaption>Splash</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s02.jpg" alt="GradSave: Welcome" loading="lazy" width="1206" height="2622"><figcaption>Welcome</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s03.jpg" alt="GradSave: What are you saving for?" loading="lazy" width="1206" height="2622"><figcaption>What are you saving for?</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s04.jpg" alt="GradSave: Amount &amp; date (live preview)" loading="lazy" width="1206" height="2622"><figcaption>Amount and date</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s05.jpg" alt="GradSave: Your goal is ready" loading="lazy" width="1206" height="2622"><figcaption>Your goal is ready</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s07.jpg" alt="GradSave: Confirm student · ready" loading="lazy" width="1206" height="2622"><figcaption>Confirm you’re a student</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s11.jpg" alt="GradSave: Enter code" loading="lazy" width="1206" height="2622"><figcaption>Enter code</figcaption></figure></div></div><div class="flow" data-reveal><div class="flow__head"><h3>Home and tabs</h3><span class="label">4 screens · slide for more →</span></div><div class="srow srow--m" data-drag><figure class="tile tile--m"><img src="img/gs-screens/s26.jpg" alt="GradSave: Home" loading="lazy" width="1206" height="2622"><figcaption>Home</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s27.jpg" alt="GradSave: Goals" loading="lazy" width="1206" height="2622"><figcaption>Goals</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s28.jpg" alt="GradSave: Emergency" loading="lazy" width="1206" height="2622"><figcaption>Emergency</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s29.jpg" alt="GradSave: Profile" loading="lazy" width="1206" height="2622"><figcaption>Profile</figcaption></figure></div></div><div class="flow" data-reveal><div class="flow__head"><h3>Add money</h3><span class="label">6 screens · slide for more →</span></div><div class="srow srow--m" data-drag><figure class="tile tile--m"><img src="img/gs-screens/s30.jpg" alt="GradSave: Add money · amount" loading="lazy" width="1206" height="2622"><figcaption>Amount</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s32.jpg" alt="GradSave: How do you want to pay?" loading="lazy" width="1206" height="2622"><figcaption>How do you want to pay?</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s33.jpg" alt="GradSave: Bank transfer details" loading="lazy" width="1206" height="2622"><figcaption>Bank transfer details</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s34.jpg" alt="GradSave: Checking your payment" loading="lazy" width="1206" height="2622"><figcaption>Checking your payment</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s35.jpg" alt="GradSave: Money added" loading="lazy" width="1206" height="2622"><figcaption>Money added</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s36.jpg" alt="GradSave: Payment failed" loading="lazy" width="1206" height="2622"><figcaption>Payment failed</figcaption></figure></div></div><div class="flow" data-reveal><div class="flow__head"><h3>Locked goals</h3><span class="label">4 screens · slide for more →</span></div><div class="srow srow--m" data-drag><figure class="tile tile--m"><img src="img/gs-screens/s42.jpg" alt="GradSave: Goal details" loading="lazy" width="1206" height="2622"><figcaption>Goal details</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s43.jpg" alt="GradSave: Why is my goal locked? (sheet)" loading="lazy" width="1206" height="2622"><figcaption>Why is my goal locked?</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s44.jpg" alt="GradSave: Goal reached" loading="lazy" width="1206" height="2622"><figcaption>Goal reached</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s45.jpg" alt="GradSave: Unlock day · goal not full" loading="lazy" width="1206" height="2622"><figcaption>Unlock day</figcaption></figure></div></div><div class="flow" data-reveal><div class="flow__head"><h3>Take money out</h3><span class="label">5 screens · slide for more →</span></div><div class="srow srow--m" data-drag><figure class="tile tile--m"><img src="img/gs-screens/s51.jpg" alt="GradSave: Take out · amount" loading="lazy" width="1206" height="2622"><figcaption>Amount</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s52.jpg" alt="GradSave: Add bank account" loading="lazy" width="1206" height="2622"><figcaption>Add bank account</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s54.jpg" alt="GradSave: Create PIN" loading="lazy" width="1206" height="2622"><figcaption>Create PIN</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s55.jpg" alt="GradSave: Money sent" loading="lazy" width="1206" height="2622"><figcaption>Money sent</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s60.jpg" alt="GradSave: Emergency · take out" loading="lazy" width="1206" height="2622"><figcaption>Emergency take-out</figcaption></figure></div></div><div class="flow" data-reveal><div class="flow__head"><h3>States</h3><span class="label">2 screens · slide for more →</span></div><div class="srow srow--m" data-drag><figure class="tile tile--m"><img src="img/gs-screens/s65.jpg" alt="GradSave: Home · offline" loading="lazy" width="1206" height="2622"><figcaption>Home · offline</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s67.jpg" alt="GradSave: Home · loading" loading="lazy" width="1206" height="2622"><figcaption>Home · loading</figcaption></figure></div></div>
+      </section>
+      <section class="sec" id="key-screens" data-only="quick">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">07 · Final screens</p><h2>73 screens, one design system.</h2></div><div class="sec__text"><p>A few key screens at full size. The full story has all 73.</p></div></div><div class="flow" data-reveal><div class="flow__head"><h3>Key screens</h3><span class="label">6 screens · slide for more →</span></div><div class="srow srow--m" data-drag><figure class="tile tile--m"><img src="img/gs-screens/s26.jpg" alt="GradSave: Home" loading="lazy" width="1206" height="2622"><figcaption>Home</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s42.jpg" alt="GradSave: Goal details" loading="lazy" width="1206" height="2622"><figcaption>Goal details</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s28.jpg" alt="GradSave: Emergency" loading="lazy" width="1206" height="2622"><figcaption>Emergency</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s34.jpg" alt="GradSave: Checking your payment" loading="lazy" width="1206" height="2622"><figcaption>Checking your payment</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s43.jpg" alt="GradSave: Why is my goal locked? (sheet)" loading="lazy" width="1206" height="2622"><figcaption>Why is my goal locked?</figcaption></figure><figure class="tile tile--m"><img src="img/gs-screens/s55.jpg" alt="GradSave: Money sent" loading="lazy" width="1206" height="2622"><figcaption>Money sent</figcaption></figure></div></div><div class="more" data-reveal><p class="label">Full story</p><h2>Want the whole story?</h2><p>The research behind it, the process, every screen and what I learned.</p><div class="more__links"><button type="button" class="btn btn--secondary" data-mode="full" data-go="problem">Read the full story <span class="arrow">→</span></button><a class="text-link" href="#screens" data-open-screens>See all 73 screens</a></div></div>
+      </section>
+      <section class="sec" id="learned" data-only="full">
+        <div class="sec__intro" data-reveal><div class="sec__title"><p class="label">08 · What I learned</p><h2>What this project taught me.</h2></div></div><div class="cards cards--4" data-reveal><div class="card"><h3 style="font-size:19px">Less is a feature</h3><p style="font-size:15px;color:var(--ink-soft)">Leaving out auto-save and gamification made the main loop clearer, not weaker.</p></div><div class="card"><h3 style="font-size:19px">Write the rules first</h3><p style="font-size:15px;color:var(--ink-soft)">Settling every “why” in a decisions log before drawing kept the screens consistent.</p></div><div class="card"><h3 style="font-size:19px">Status is trust</h3><p style="font-size:15px;color:var(--ink-soft)">With money, “pending” and “added” must never look alike.</p></div><div class="card"><h3 style="font-size:19px">What’s left</h3><p style="font-size:15px;color:var(--ink-soft)">Finish hi-fi for every journey, build the prototype and confirm the payment partner.</p></div></div>
+      </section>
+    </div>
+
+    <section class="next" data-reveal>
+      <p class="label">Next project</p>
+      <div class="next__row">
+        <a class="next__img" href="waec.html" data-cursor="Next" aria-label="WAEC result checker case study" style="background:var(--p-waec)"><img src="img/next-waec.jpg" alt="The redesigned WAEC result checker in a browser" loading="lazy" width="2184" height="1260"></a>
+        <div class="next__text"><h2>WAEC result checker</h2><p class="tags">Web · Unsolicited redesign</p><p>A clearer WAEC result checker.</p><a class="text-link" href="waec.html">Read case study <span class="arrow">→</span></a></div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="wrap foot" id="contact">
+    <section class="cta on-dark" data-reveal>
+      <div class="cta__left">
+        <p class="cta__eyebrow"><i></i>OPEN TO WORK · REMOTE</p>
+        <h2>Let’s work together.</h2>
+        <p>I’m open to remote product design roles, freelance projects and collaborations. Feel free to reach out.</p>
+        <div class="cta__btns">
+          <a class="btn btn--primary" href="mailto:sulaimontoheeb400@gmail.com">Email me</a>
+          <a class="btn btn--secondary" href="https://docs.google.com/document/d/1FTQwIDMbJTH2n3hDwcGk9VsAi0eCIkIrzyoSCxBQKmU/export?format=pdf" target="_blank" rel="noopener">Download CV <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M6 2.5v7M3 6.5l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+      <div class="cta__right">
+        <p class="cta__eyebrow" style="letter-spacing:.1em">GET IN TOUCH</p>
+        <a class="cta__email" href="mailto:sulaimontoheeb400@gmail.com">sulaimontoheeb400@gmail.com</a>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/sulaimon-toheeb" target="_blank" rel="noopener">LinkedIn <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="https://www.behance.net/Sulaimon_Toheeb" target="_blank" rel="noopener">Behance <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="https://x.com/Toheeb_design" target="_blank" rel="noopener">X <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+    </section>
+    <div class="foot__bottom"><span>© 2026 Toheeb</span><span>Lagos, Nigeria · Open to remote work</span></div>
+  </footer>
+</main>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <div class="menu__top"><a class="logo" href="index.html">TOHEEB</a><button class="menu__close" id="menuClose">Close ✕</button></div>
+  <nav class="menu__links">
+    <a href="work.html"><small>01</small>Work</a>
+    <a href="about.html"><small>02</small>About</a>
+    <a href="https://docs.google.com/document/d/1FTQwIDMbJTH2n3hDwcGk9VsAi0eCIkIrzyoSCxBQKmU/export?format=pdf" target="_blank" rel="noopener"><small>03</small>Download CV</a>
+    <a href="contact.html"><small>04</small>Contact</a>
+  </nav>
+  <div class="menu__foot">
+    <p class="cta__eyebrow"><i></i>OPEN TO WORK · REMOTE · LAGOS</p>
+    <a class="menu__email" href="mailto:sulaimontoheeb400@gmail.com">sulaimontoheeb400@gmail.com <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <div class="menu__social">
+      <a href="https://www.linkedin.com/in/sulaimon-toheeb" target="_blank" rel="noopener">LinkedIn <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="https://www.behance.net/Sulaimon_Toheeb" target="_blank" rel="noopener">Behance <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="https://x.com/Toheeb_design" target="_blank" rel="noopener">X <svg class="ic" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<script src="js/site.js"></script>
+<script src="js/gradsave-screens.js"></script>
+<script src="js/viewer.js"></script>
+<script src="js/case.js"></script>
+<script src="js/cursor.js"></script>
+</body>
+</html>
